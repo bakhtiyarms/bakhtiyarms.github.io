@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/ONS%20Stats.csv",
+    "format": {
+      "type": "dsv",
+      "delimiter": ";"
+    }
+  },
+  "mark": {
+    "type": "line"
+  },
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Vice spending",
+    "subtitle": ["Spending on Alcohol, Tabocco, and Norcotics", "Source: ONS"] 
+  },
+  "encoding": {
+    "x": {
+      "field": "Date", 
+      "type": "temporal"
+      },
+    "y": {
+      "field": "Value",
+      "type": "quantitative"
+      },
+      "color": {
+      "field": "Series"
+      }
+  }
+}
