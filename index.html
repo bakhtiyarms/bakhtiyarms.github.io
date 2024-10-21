@@ -138,6 +138,16 @@
         <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
+    <section></section>
+        <div class="chart-description">
+            <h2>Week 3: Highlights from the Festival of Economics at LSE</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Britain's current performance in international trade: Boosting the UK exports
+            </p>
+        </div>
+        <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -154,6 +164,7 @@
         let figure_4_spec = "learning_trial_with_Zeytuna.json"
         let figure_5_spec = "first_made_chart.json"
         let figure_6_spec = "ONS_Stats.json"
+        let figure_7_spec = "British_exports.json"
                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -169,6 +180,7 @@
         vegaEmbed('#Location4', figure_4_spec)
         vegaEmbed('#Location5', figure_5_spec)
         vegaEmbed('#Location6', figure_6_spec)
+        vegaEmbed('#Location7', figure_7_spec)
 
     </script>
 
