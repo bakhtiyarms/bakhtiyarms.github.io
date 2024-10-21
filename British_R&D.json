@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Britains's Exports",
+    "text": "R&D",
     "anchor": "start",
-    "subtitle": "Total trade, £ million GBP | Source: ONS through ECO API",
+    "subtitle": "Gross R&D, % of GDP | Source: ONS through ECO API",
     "fontSize": "14",
     "subtitleFontSize": "12",
     "color": "#000000",
@@ -21,14 +21,14 @@
     "strokeOpacity": 0
   },
   "data": {
-    "url": "https://api.economicsobservatory.com/gbr/expo?vega",
+    "url": "https://api.economicsobservatory.com/gbr/rand?vega",
     "format": {
       "type": "json"
     }
   },
   "mark": {
     "type": "line",
-    "color": "#f4134d",
+    "color": "#1154e6",
     "strokeWidth": "2"
   },
   "encoding": {

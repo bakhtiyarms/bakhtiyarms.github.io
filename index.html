@@ -140,12 +140,21 @@
 
     <section>
         <div class="chart-description">
-            <h2>Week 3: Highlights from the Festival of Economics at LSE</h2>
+            <h2>Week 3: Highlights from the Festival of Economics at LSE - Britain's current performance in international trade: Boosting the UK exports
+            </h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Britain's current performance in international trade: Boosting the UK exports
+                Though UK exports have been on a constant increase since the 1960s, it was negatively affected by the pandemic in 2020 and in the aftermath period.
             </p>
         </div>
         <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    </section>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                For the last decades, the UK has spent yearly less than 1% of its GDP on R&D, below the investment levels of other advanced economies.
+            </p>
+        </div>
+        <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -165,6 +174,7 @@
         let figure_5_spec = "first_made_chart.json"
         let figure_6_spec = "ONS_Stats.json"
         let figure_7_spec = "British_exports.json"
+        let figure_8_spec = "British_R&D.json"
                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -181,6 +191,7 @@
         vegaEmbed('#Location5', figure_5_spec)
         vegaEmbed('#Location6', figure_6_spec)
         vegaEmbed('#Location7', figure_7_spec)
+        vegaEmbed('#Location8', figure_8_spec)
 
     </script>
 
