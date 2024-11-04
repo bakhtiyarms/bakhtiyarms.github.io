@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Ages of first-time mothers in 1980",
+    "anchor": "start",
+    "subtitle": "The New York Times, Nov. 22, 2018",
+    "fontSize": 20,
+    "subtitleFontSize": 15,
+    "color": "#263624",
+    "subtitleColor": "#263624"
+  },
+  "height": 400,
+  "width": 500,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "white",
+  "view": {
+    "fill": "",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/mothersage.csv",
+    "format": {
+      "type": "dsv",
+      "delimiter": ";"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "replace(datum.percent, ',', '.')",
+      "as": "percent_clean"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "color": "#120353a4",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "percent_clean",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "titleColor": "#7fbb68",
+        "grid": true,
+        "gridOpacity": 0.6,
+        "values": [0,2,4,6,8]
+      },
+      "scale": {
+        "domain": [0, 10]
+      }
+    },
+     "color": {
+            "condition": [
+              {
+                "test": "datum.age <= 22",
+                "color": "rgb(69,141,198)"
+              },
+              {
+                "test": "datum.age > 22",
+                "value": "#7fbb68"
+              }
+            ],
+            "field": "age",
+            "type": "quantitative",
+            "legend": null
+          }
+  }
+}
