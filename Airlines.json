@@ -1,0 +1,145 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-9e9ad6c1261492cc51b797c556c3630e"},
+  "mark": "bar",
+  "title": {
+    "text": "Forbes' world's biggest public airline companies by revenue",
+    "fontSize": 12,
+    "offset": 10,
+    "anchor": "start",
+    "frame": "group"
+  },
+  "encoding": {
+    "y": {
+      "field": "Airline",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": ""
+      }
+    },
+    "x": {
+      "field": "Revenue",
+      "type": "quantitative",
+      "axis": {
+        "labelExpr": "'$' + datum.value + 'b'",
+        "title": ""
+      }
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-9e9ad6c1261492cc51b797c556c3630e": [
+      {
+        "Rank": 1,
+        "Airline": "Delta Air Lines",
+        "Conutry": "United States",
+        "Revenue": 59,
+        "Profit": "5",
+        "Assets": 75,
+        "Market cap": 34,
+        "Employees": 100000
+      },
+      {
+        "Rank": 2,
+        "Airline": "United Airlines Holdings",
+        "Conutry": "United States",
+        "Revenue": 54.8,
+        "Profit": "2.7",
+        "Assets": 71.9,
+        "Market cap": 18.1,
+        "Employees": 103300
+      },
+      {
+        "Rank": 3,
+        "Airline": "American Airlines Group",
+        "Conutry": "United States",
+        "Revenue": 53.2,
+        "Profit": "0.5",
+        "Assets": 64.4,
+        "Market cap": 9.7,
+        "Employees": 132100
+      },
+      {
+        "Rank": 4,
+        "Airline": "Lufthansa Group",
+        "Conutry": "Germany",
+        "Revenue": 38.8,
+        "Profit": "1.5",
+        "Assets": 51.1,
+        "Market cap": 8.7,
+        "Employees": 96677
+      },
+      {
+        "Rank": 5,
+        "Airline": "Air France–KLM",
+        "Conutry": "France/ Netherlands",
+        "Revenue": 32.9,
+        "Profit": "0.69",
+        "Assets": 37.5,
+        "Market cap": 3,
+        "Employees": 75000
+      },
+      {
+        "Rank": 6,
+        "Airline": "International Airlines Group",
+        "Conutry": "United Kingdom/Spain",
+        "Revenue": 31.8,
+        "Profit": "2.9",
+        "Assets": 41.6,
+        "Market cap": 11.1,
+        "Employees": 71794
+      },
+      {
+        "Rank": 7,
+        "Airline": "Southwest Airlines",
+        "Conutry": "United States",
+        "Revenue": 26.7,
+        "Profit": "0.43",
+        "Assets": 36,
+        "Market cap": 16.7,
+        "Employees": 74806
+      },
+      {
+        "Rank": 8,
+        "Airline": "China Southern Airlines",
+        "Conutry": "China",
+        "Revenue": 22.5,
+        "Profit": "–0.59",
+        "Assets": 43.7,
+        "Market cap": 7.3,
+        "Employees": 99468
+      },
+      {
+        "Rank": 9,
+        "Airline": "Turkish Airlines",
+        "Conutry": "Turkey",
+        "Revenue": 21.2,
+        "Profit": "6.8",
+        "Assets": 35.6,
+        "Market cap": 13.8,
+        "Employees": 55884
+      },
+      {
+        "Rank": 10,
+        "Airline": "Air Canada",
+        "Conutry": "Canada",
+        "Revenue": 16.4,
+        "Profit": "1.6",
+        "Assets": 22,
+        "Market cap": 4.8,
+        "Employees": 35675
+      },
+      {
+        "Rank": 11,
+        "Airline": "China Eastern Airlines",
+        "Conutry": "China",
+        "Revenue": 16,
+        "Profit": "–1.2",
+        "Assets": 40.1,
+        "Market cap": 5.5,
+        "Employees": 81781
+      }
+    ]
+  }
+}
