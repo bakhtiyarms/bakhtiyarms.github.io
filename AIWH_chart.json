@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/AIWH.json",
+    "format": {"property": "years"}
+  },
+  "width": 350,
+  "height": 250,
+  "title": {
+    "text": "Employment rate: Aged 18-24: Not in full-time education: UK: All: %: SA",
+    "anchor": "start"
+  },
+  "transform": [{"calculate": "datum.value / 100", "as": "scaled_value"}],
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": ""},
+    "y": {
+      "field": "scaled_value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "title": null,
+        "ticks": false,
+        "domain": false,
+        "labelPadding": 5,
+        "format": ".1%"
+      }
+    }
+  }
+}

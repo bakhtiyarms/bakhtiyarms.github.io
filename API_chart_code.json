@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "US EIA chart. Uses EIA API V2.",
+  
+    "title": {
+      "text": "Renewables - electricity generation",
+      "subtitle":"Billion kilowatthours generated. World, Annual. Source: US EIA",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": 
+      {
+        "url": "https://api.eia.gov/v2/international/data/?frequency=annual&data[0]=value&facets[activityId][]=12&facets[productId][]=29&facets[countryRegionId][]=WORL&facets[unit][]=BKWH&sort[0][column]=period&sort[0][direction]=desc&offset=0&length=5000&api_key=wV475zpNjUBG96bglhqZdChGNx4bjo8msvtuZxzC",
+        "format":{
+          "type":"json",
+          "property":"response.data"
+        }
+      },
+
+
+    
+    "height": 400,
+    "width": 350,
+    
+    "mark": {
+      "type": "bar",
+      "color": "forestgreen"
+    },
+    
+    "encoding": {
+    
+      "x": {
+        "field": "period",
+        "type": "temporal",
+        "timeUnit": "year"
+      },
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative"
+      }
+    }
+  }

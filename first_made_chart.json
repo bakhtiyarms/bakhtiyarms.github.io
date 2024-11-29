@@ -4,10 +4,10 @@
     "text": "Renewables in Germany",
     "anchor": "start",
     "subtitle": "Output, GWh, | IEA via ECO-API",
-    "fontSize": "25",
+    "fontSize": "20",
     "subtitleFontSize": "15",
-    "color": "#286820",
-    "subtitleColor": "#286820"
+    "color": "#263624",
+    "subtitleColor": "#263624"
   },
   "height": "250",
   "width": "500",

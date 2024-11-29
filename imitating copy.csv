@@ -1,0 +1,65 @@
+﻿size;country;type of taxation
+120,03;SWE;Carbon tax
+0,71;SWE;ETS
+0;SWE;Fossil fuel subsidy
+81,82;SWE;Fuel excise tax
+27,59;DNK;Carbon tax
+0,06;DNK;ETS
+0;DNK;Fossil fuel subsidy
+160,22;DNK;Fuel excise tax
+61,77;FIN;Carbon tax
+0;FIN;ETS
+0;FIN;Fossil fuel subsidy
+52,67;FIN;Fuel excise tax
+54,4;NOR;Carbon tax
+2,47;NOR;ETS
+0;NOR;Fossil fuel subsidy
+54,63;NOR;Fuel excise tax
+0;ITA;Carbon tax
+0,17;ITA;ETS
+-0,67;ITA;Fossil fuel subsidy
+71,11;ITA;Fuel excise tax
+0;DEU;Carbon tax
+24,63;DEU;ETS
+0;DEU;Fossil fuel subsidy
+26,6;DEU;Fuel excise tax
+39,9;FRA;Carbon tax
+0,5;FRA;ETS
+0;FRA;Fossil fuel subsidy
+5,18;FRA;Fuel excise tax
+27,99;CAN;Carbon tax
+1,47;CAN;ETS
+0;CAN;Fossil fuel subsidy
+1,28;CAN;Fuel excise tax
+26,89;IRL;Carbon tax
+0,12;IRL;ETS
+0;IRL;Fossil fuel subsidy
+2,87;IRL;Fuel excise tax
+2,19;JPN;Carbon tax
+0,15;JPN;ETS
+0;JPN;Fossil fuel subsidy
+20,45;JPN;Fuel excise tax
+0;ESP;Carbon tax
+0,45;ESP;ETS
+0;ESP;Fossil fuel subsidy
+19,14;ESP;Fuel excise tax
+0;GBR;Carbon tax
+0,26;GBR;ETS
+0;GBR;Fossil fuel subsidy
+7,5;GBR;Fuel excise tax
+0;CZE;Carbon tax
+0,2;CZE;ETS
+0;CZE;Fossil fuel subsidy
+2,56;CZE;Fuel excise tax
+0;MEX;Carbon tax
+0,2;MEX;ETS
+0;MEX;Fossil fuel subsidy
+2,56;MEX;Fuel excise tax
+0;USA;Carbon tax
+0,98;USA;ETS
+-1,32;USA;Fossil fuel subsidy
+0;USA;Fuel excise tax
+0;AUS;Carbon tax
+0;AUS;ETS
+-3,93;AUS;Fossil fuel subsidy
+0,04;AUS;Fuel excise tax
