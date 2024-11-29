@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/YCRE.json",
+      "format": {"property": "years"}
+    },
+    "width": 300,
+    "height": 250,
+    "title": {
+      "text": "In employment: Aged 16-24: UK: Female: Thousands: NSA",
+      "subtitlePadding": 12,
+      "anchor": "start"
+    },
+    "mark": {"type": "line"},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": ""},
+      "y": {"field": "value", "type": "quantitative", "title": ""}
+    }
+  }

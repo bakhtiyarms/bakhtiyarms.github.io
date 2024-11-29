@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/YCEP.json",
+      "format": {"property": "quarters"}
+    },
+    "width": 350,
+    "height": 250,
+    "title": {
+      "text": "Usual weekly hrs of work: Employees: Over 45 hrs: UK: Female: 000s: SA",
+      "anchor": "start"
+    },
+    "transform": [
+      {
+        "calculate": "datetime(datum.year,(substring(datum.quarter, 1)*3-2),1) ",
+        "as": "date"
+      }
+    ],
+    "mark": {"type": "line"},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": ""},
+      "y": {"field": "value", "type": "quantitative", "title": ""}
+    }
+  }
