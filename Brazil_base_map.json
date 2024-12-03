@@ -1,0 +1,25 @@
+{ 
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "title": {
+      "text": "Brazil - base map",
+      "subtitle":["Federative units of Brazil"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/brazil-states.geo.json",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type": "geoshape",
+        "fill": "chartreuse",
+        "stroke": "darkgray",
+        "strokeWidth":0.5},
+    "encoding": {"tooltip":{"field":"properties.name"}}
+  }
