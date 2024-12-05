@@ -1,56 +1,56 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 300,
-    "title": {
-      "text": "Brazil - base map",
-      "subtitle": ["Federative units of Brazil"],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "subtitlePadding": 5,
-      "anchor": "middle",
-      "color": "black"
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/brazil-states.geojson",
-      "format": {"property": "features"}
-    },
-    "transform": [
-      {
-        "lookup": "properties.id",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/Brazil_federal_population.csv",
-            "format": {"type": "dsv", "delimiter": ";"}
-          },
-          "key": "Object ID",
-          "fields": ["Capital", "Populatoin"]
-        }
-      },
-      {
-        "calculate": "replace(datum.Populatoin, ',', '')",
-        "as": "Populatoin"
-      },
-      {
-        "calculate": "replace(datum.Populatoin, ',', '')",
-        "as": "Populatoin"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Brazil - base map",
+    "subtitle": ["Federative units of Brazil"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitlePadding": 5,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/Brazil-states.geojson",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/Brazil_federal_population.csv",
+          "format": {"type": "dsv", "delimiter": ";"}
+        },
+        "key": "Object ID",
+        "fields": ["Capital", "Populatoin"]
       }
-    ],
-    "projection": {"type": "mercator"},
-    "mark": {
-      "type": "geoshape",
-      "stroke": "darkgray",
-      "strokeWidth": 0.5
     },
-    "encoding": {
-      "color": {
-        "field": "Populatoin",
-        "type": "quantitative"
-      },
-      "tooltip": [
-        {"field": "properties.name", "title": "State"},
-        {"field": "Capital"},
-        {"field": "Populatoin", "title": "Population"}
-      ]
+    {
+      "calculate": "replace(datum.Populatoin, ',', '')",
+      "as": "Populatoin"
+    },
+    {
+      "calculate": "replace(datum.Populatoin, ',', '')",
+      "as": "Populatoin"
     }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "stroke": "darkgray",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Populatoin",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "properties.name", "title": "State"},
+      {"field": "Capital"},
+      {"field": "Populatoin", "title": "Population"}
+    ]
   }
+}
