@@ -3,7 +3,7 @@
   "width": 500,
   "height": 500,
   "title": {
-    "text": "Brazil - base map",
+    "text": "Brazil - choropleth map",
     "subtitle": ["Federative units of Brazil"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
