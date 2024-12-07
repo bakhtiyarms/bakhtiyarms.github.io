@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,29 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
-<body>
-    <p>My Project Page</p>
 
-<!-- everything needs to be within body -->
+<h1 class="big" style="margin-bottom: 0px;">
+    PP434 - Automated Data Visualisation for Policymaking - Bakhtiyar's Project Page
+</h1>
 
-</body>
+<h2 class="small">
+    COPs and Inclusive Growth
+</h2>
+
+<section>
+    <div class="chart-description">
+        <h2> </h2>
+        <p> Total number of participants</p>
+    </div>
+    <figure id="Location1"></figure>
+</section>
+
+<script>
+
+let figure_1_spec = "PP434_DP_C1.json"
+
+vegaEmbed('#Location1', figure_1_spec)
+
+</script>
+
 </html>
