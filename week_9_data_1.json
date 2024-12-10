@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"view": {"strokeOpacity": 0}},
+    "title": {
+      "text": "Population Growth and Average Housing Prices in the UK",
+      "subtitle": [
+        "Population: in millions. Source: ONS Census 2021",
+        "Prices: in thousand £. Source: ONS"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "middle",
+      "fontSize": 16,
+      "offset": 20
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/main/week_9_data.csv",
+      "format": {"type": "dsv", "delimiter": ";"}
+    },
+    "mark": {"type": "circle", "size": 150, "opacity": 0.8},
+    "height": 300,
+    "width": 400,
+    "encoding": {
+      "x": {
+        "field": "population",
+        "type": "quantitative",
+        "title": "Population Growth",
+        "scale": { "domain": [60, 70] },
+        "axis": {"labelExpr": "format(datum.value, ',') + 'm'"}
+      },
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "title": "Average Housing Prices",
+        "scale": {"domain": [150000, 300000]},
+        "axis": {"labelExpr": "'£' + format(datum.value, ',')"}
+      },
+      "tooltip": [
+        {"field": "year", "type": "quantitative", "title": "Year"},
+        {"field": "population", "type": "quantitative", "title": "Population (millions)", "format": ",.2f"},
+        {"field": "price", "type": "quantitative", "title": "Average Price (£)", "format": ",d"}
+      ]
+    },
+    "selection": {
+      "grid": {
+        "type": "interval",
+        "bind": "scales"
+      }
+    },
+    "autosize": {"type": "pad", "contains": "padding", "resize": true}
+  }
+  
