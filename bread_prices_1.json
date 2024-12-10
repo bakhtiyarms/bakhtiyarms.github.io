@@ -1,0 +1,594 @@
+{
+    "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+    "title": { 
+      "text": "Monthly Index Changes in Bread Prices in Britain",
+      "subtitle": "October 2023 - December 2024"},
+    "data": {"name": "data-3e75ec01f672fe45fa7bff1e1103daee"},
+    "mark": {"type": "line", "interpolate": "basis"},
+    "encoding": {
+      "color": {"field": "cpi_name", "type": "nominal"},
+      "x": {"field": "year_month", "type": "temporal"},
+      "y": {"field": "index", "scale": {"zero": false}, "type": "quantitative"}
+    },
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+    "datasets": {
+      "data-3e75ec01f672fe45fa7bff1e1103daee": [
+        {
+          "year_month": "2023-10",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.19,
+          "start_price": 1.19,
+          "index": 100
+        },
+        {
+          "year_month": "2023-10",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.4,
+          "start_price": 1.4,
+          "index": 100
+        },
+        {
+          "year_month": "2023-10",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.39,
+          "start_price": 1.39,
+          "index": 100
+        },
+        {
+          "year_month": "2023-10",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.7,
+          "start_price": 1.7,
+          "index": 100
+        },
+        {
+          "year_month": "2023-11",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2023-11",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2023-11",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.39,
+          "start_price": 1.39,
+          "index": 100
+        },
+        {
+          "year_month": "2023-11",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.8,
+          "start_price": 1.7,
+          "index": 105.88235294117648
+        },
+        {
+          "year_month": "2023-12",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.8,
+          "start_price": 1.7,
+          "index": 105.88235294117648
+        },
+        {
+          "year_month": "2023-12",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.395,
+          "start_price": 1.39,
+          "index": 100.35971223021582
+        },
+        {
+          "year_month": "2023-12",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2023-12",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2023-6",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2023-6",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.4,
+          "start_price": 1.4,
+          "index": 100
+        },
+        {
+          "year_month": "2023-6",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.625,
+          "start_price": 1.39,
+          "index": 116.90647482014388
+        },
+        {
+          "year_month": "2023-6",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2023-7",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.49,
+          "start_price": 1.7,
+          "index": 87.6470588235294
+        },
+        {
+          "year_month": "2023-7",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.5,
+          "start_price": 1.39,
+          "index": 107.91366906474822
+        },
+        {
+          "year_month": "2023-7",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2023-7",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.4,
+          "start_price": 1.4,
+          "index": 100
+        },
+        {
+          "year_month": "2023-8",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.19,
+          "start_price": 1.19,
+          "index": 100
+        },
+        {
+          "year_month": "2023-8",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.89,
+          "start_price": 1.4,
+          "index": 63.57142857142858
+        },
+        {
+          "year_month": "2023-8",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2023-8",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2023-9",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.15,
+          "start_price": 1.19,
+          "index": 96.63865546218487
+        },
+        {
+          "year_month": "2023-9",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2023-9",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.39,
+          "start_price": 1.39,
+          "index": 100
+        },
+        {
+          "year_month": "2023-9",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2024-1",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.8,
+          "start_price": 1.7,
+          "index": 105.88235294117648
+        },
+        {
+          "year_month": "2024-1",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-1",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-1",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2024-10",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.45,
+          "start_price": 1.39,
+          "index": 104.31654676258992
+        },
+        {
+          "year_month": "2024-10",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2024-10",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.09,
+          "start_price": 1.19,
+          "index": 91.59663865546219
+        },
+        {
+          "year_month": "2024-10",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.75,
+          "start_price": 1.4,
+          "index": 53.57142857142857
+        },
+        {
+          "year_month": "2024-11",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.1,
+          "start_price": 1.19,
+          "index": 92.43697478991598
+        },
+        {
+          "year_month": "2024-11",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.75,
+          "start_price": 1.4,
+          "index": 53.57142857142857
+        },
+        {
+          "year_month": "2024-11",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.42,
+          "start_price": 1.39,
+          "index": 102.15827338129498
+        },
+        {
+          "year_month": "2024-11",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.68,
+          "start_price": 1.7,
+          "index": 98.82352941176471
+        },
+        {
+          "year_month": "2024-2",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2024-2",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.8,
+          "start_price": 1.7,
+          "index": 105.88235294117648
+        },
+        {
+          "year_month": "2024-2",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-2",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-3",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-3",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-3",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2024-3",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.75,
+          "start_price": 1.7,
+          "index": 102.94117647058825
+        },
+        {
+          "year_month": "2024-4",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-4",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-4",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2024-4",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.9,
+          "start_price": 1.7,
+          "index": 111.76470588235294
+        },
+        {
+          "year_month": "2024-5",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.9,
+          "start_price": 1.7,
+          "index": 111.76470588235294
+        },
+        {
+          "year_month": "2024-5",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.4,
+          "start_price": 1.39,
+          "index": 100.71942446043165
+        },
+        {
+          "year_month": "2024-5",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-5",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-6",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-6",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 1.39,
+          "start_price": 1.4,
+          "index": 99.28571428571429
+        },
+        {
+          "year_month": "2024-6",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.45,
+          "start_price": 1.39,
+          "index": 104.31654676258992
+        },
+        {
+          "year_month": "2024-6",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2024-7",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        },
+        {
+          "year_month": "2024-7",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.1,
+          "start_price": 1.19,
+          "index": 92.43697478991598
+        },
+        {
+          "year_month": "2024-7",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.75,
+          "start_price": 1.4,
+          "index": 53.57142857142857
+        },
+        {
+          "year_month": "2024-7",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.45,
+          "start_price": 1.39,
+          "index": 104.31654676258992
+        },
+        {
+          "year_month": "2024-8",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.2,
+          "start_price": 1.19,
+          "index": 100.84033613445378
+        },
+        {
+          "year_month": "2024-8",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.75,
+          "start_price": 1.4,
+          "index": 53.57142857142857
+        },
+        {
+          "year_month": "2024-8",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.45,
+          "start_price": 1.39,
+          "index": 104.31654676258992
+        },
+        {
+          "year_month": "2024-8",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.6,
+          "start_price": 1.7,
+          "index": 94.11764705882354
+        },
+        {
+          "year_month": "2024-9",
+          "cpi_id": 210111,
+          "cpi_name": "white sliced loaf branded 750g",
+          "price": 0.75,
+          "start_price": 1.4,
+          "index": 53.57142857142857
+        },
+        {
+          "year_month": "2024-9",
+          "cpi_id": 210113,
+          "cpi_name": "wholemeal sliced loaf branded",
+          "price": 1.5,
+          "start_price": 1.39,
+          "index": 107.91366906474822
+        },
+        {
+          "year_month": "2024-9",
+          "cpi_id": 210106,
+          "cpi_name": "six bread rolls-white/brown",
+          "price": 1.19,
+          "start_price": 1.19,
+          "index": 100
+        },
+        {
+          "year_month": "2024-9",
+          "cpi_id": 210114,
+          "cpi_name": "chilled garlic bread",
+          "price": 1.5,
+          "start_price": 1.7,
+          "index": 88.23529411764706
+        }
+      ]
+    }
+  }

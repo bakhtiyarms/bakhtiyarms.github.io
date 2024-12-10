@@ -1,0 +1,61 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 450,
+    "height": 135,
+    "description": "An interactive horizontal bar chart showing starting index prices of bread types with bread-like colors.",
+    "title": {
+      "text": "Starting Index Prices of Bread Types",
+      "offset": 10
+    },
+    "data": {
+      "values": [
+        {"price": 1.2, "index": "chilled garlic bread"},
+        {"price": 1.39, "index": "six bread rolls-white/brown"},
+        {"price": 1.4, "index": "white sliced loaf branded 750g"},
+        {"price": 1.65, "index": "wholemeal sliced loaf branded"}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "price",
+        "type": "quantitative",
+        "title": "Price (£)",
+        "format": ".2f", 
+        "axis": {
+          "labelExpr": "'£' + datum.value"
+        }
+      },
+      "y": {
+        "field": "index",
+        "type": "ordinal",
+        "title": "Bread Type",
+        "sort": "-x"
+      },
+      "color": {
+        "field": "index",
+        "type": "nominal",
+        "title": "Bread Type",
+        "scale": {
+          "domain": [
+            "chilled garlic bread",
+            "six bread rolls-white/brown",
+            "white sliced loaf branded 750g",
+            "wholemeal sliced loaf branded"
+          ],
+          "range": ["#d9a066", "#d4b483", "#f5e8c7", "#8c613c"]
+        }
+      },
+      "tooltip": [
+        {"field": "index", "type": "ordinal", "title": "Bread Type"},
+        {"field": "price", "type": "quantitative", "title": "Price (£)", "format": ".2f"}
+      ]
+    },
+    "selection": {
+      "grid": {
+        "type": "interval",
+        "bind": "scales"
+      }
+    }
+  }
+  

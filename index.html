@@ -218,7 +218,24 @@
         <figure id="Location21"></figure>
         <p> Choropleth Map</p>
         <figure id="Location22"></figure>
-        
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Week 8: Big Data. Extracting a story from millions of prices. </h2>
+            
+            <p> This chart shows the price evolution of four bread types in Britain over a year using data from Davies and McElvoy (2024).
+                I filtered for bread products, grouped data by month to calculate average indices, and plotted the results,
+                differentiating each bread type with distinct colors for clarity. </p>
+            <p> https://colab.research.google.com/drive/1RaKb3tf7lhjzJqN-nRRU_RE5yEq-4oSW?usp=sharing </p>
+            <figure id="Location23"></figure>
+            
+            <p> This bar chart displays the starting prices of four bread types.
+                I filtered the dataset by cpi_name to identify the products and
+                extracted their earliest price observations and displayed the prices with horizontal bars. </p>
+            <p> https://colab.research.google.com/drive/1ToCyX_0W9GB2HP82SG496PgC3WaaIz65?usp=sharing </p>
+            <figure id="Location24"></figure>
+        </div>
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -253,6 +270,8 @@
         let figure_20_spec = "JPA2_chart.json"
         let figure_21_spec = "Brazil_base_map.json"
         let figure_22_spec = "Brazil_advanced_map.json"
+        let figure_23_spec = "bread_prices_1.json"
+        let figure_24_spec = "bread_prices_2.json"
                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -284,6 +303,8 @@
         vegaEmbed('#Location20', figure_20_spec)
         vegaEmbed('#Location21', figure_21_spec)
         vegaEmbed('#Location22', figure_22_spec)
+        vegaEmbed('#Location22', figure_23_spec)
+        vegaEmbed('#Location22', figure_24_spec)
 
     </script>
 
