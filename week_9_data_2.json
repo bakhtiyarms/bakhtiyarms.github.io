@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing the relationship between inflation and unemployment in the UK.",
+    "width": 300,
+    "height": 300,
+    "title": {
+      "text": "Implications of the Phillips Curve in the United Kingdom",
+      "subtitle": "Relationship between Inflation and Unemployment after the 2007 - 2008 Global Financial Crisis",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black",
+      "offset": 10
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/week_10_data_2_new.csv",
+      "format": {"type": "dsv", "delimiter": ";"}
+    },
+    "layer": [
+      {
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "Inflation",
+            "type": "quantitative",
+            "title": "Inflation Rate"
+          },
+          "y": {
+            "field": "Unemployment",
+            "type": "quantitative",
+            "title": "Unemployment Rate"
+          },
+          "tooltip": [
+            {"field": "Year", "type": "temporal", "title": "Year"},
+            {"field": "Inflation", "type": "quantitative", "title": "Inflation Rate"},
+            {"field": "Unemployment", "type": "quantitative", "title": "Unemployment Rate"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "red",
+          "strokeWidth": 2
+        },
+        "transform": [
+          {
+            "regression": "Unemployment",
+            "on": "Inflation",
+            "method": "linear"
+          }
+        ],
+        "encoding": {
+          "x": {"field": "Inflation", "type": "quantitative"},
+          "y": {"field": "Unemployment", "type": "quantitative"}
+        }
+      }
+    ]
+  }
+  
