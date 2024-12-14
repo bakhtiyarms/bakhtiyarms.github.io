@@ -1,46 +1,50 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Trade Balance of Azerbaijan",
-      "subtitle": ["Total Value of Imports and Exports between 1991 - 2023 in mln $ "],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 13,
-      "subtitlePadding": 5,
-      "anchor": "middle",
-      "color": "black",
-      "offset": 15
-    },
-    "width": 300,
-    "height": 300,
-    "data": {
-      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/week_10_2.csv",
-      "format": {"type": "dsv", "delimiter": ";"}
-    },
-    "mark": {
-      "type": "area",
-      "orient": "vertical",
-      "opacity": 0.7
-    },
-    "encoding": {
-      "x": {
-        "field": "imports",
-        "type": "temporal",
-        "title": "Imports"
-      },
-      "y": {
-        "field": "exports",
-        "type": "quantitative",
-        "title": "Exports"
-      },
-      "color": {
-        "field": "price",
-        "type": "ordinal",
-        "legend": null,
-        "scale": {
-          "range": ["#D9D9F3", "#00BFFF", "#0276FD", "#000080", "#0276FD", "#00BFFF", "#D9D9F3"]
-        }
-      },
-      "order": {"field": "price", "type": "ordinal"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Trade Balance of Azerbaijan",
+    "subtitle": [
+      "Total Value of Imports and Exports between 1991 - 2023 in mln $"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 13,
+    "subtitlePadding": 5,
+    "anchor": "middle",
+    "color": "black",
+    "offset": 15
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/week_10_2.csv",
+    "format": {"type": "dsv", "delimiter": ";"}
+  },
+  "transform": [
+    {
+      "fold": ["imports", "exports"],
+      "as": ["type", "value"]
     }
+  ],
+  "mark": {
+    "type": "area",
+    "orient": "vertical",
+    "opacity": 0.9,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {"field": "year", "type": "temporal", "title": "Year"},
+    "y": {"field": "value", "type": "quantitative", "title": "Exports and Imports"},
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {
+        "range": ["green", "orange"]
+      },
+      "title": "Trade Type"
+    },
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "type", "type": "nominal", "title": "Type"},
+      {"field": "value", "type": "quantitative", "title": "Amount (mln $)"}
+    ]
   }
-  
+}
