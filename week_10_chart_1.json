@@ -1,82 +1,47 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Inflation Rate in Azerbaijan in 2024",
   "title": {
-    "text": "Inflation Rate in Azerbaijan in 2024",
-    "subtitle": "Source: Central Bank of Azerbaijan",
+    "text": "Trade Balance of Azerbaijan",
+    "subtitle": [
+      "Total Value of Imports and Exports between 1991 - 2023 in mln $"
+    ],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 13,
+    "subtitlePadding": 5,
     "anchor": "middle",
     "color": "black",
-    "offset": 10
+    "offset": 15
   },
+  "width": 300,
+  "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/week_10_1_updated.csv",
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/week_10_2.csv",
     "format": {"type": "dsv", "delimiter": ";"}
   },
-  "height": 300,
-  "width": 400,
+  "transform": [{"fold": ["imports", "exports"], "as": ["type", "value"]}],
+  "mark": {
+    "type": "area",
+    "orient": "vertical",
+    "opacity": 0.9,
+    "tooltip": true
+  },
   "encoding": {
-        "x": {"field": "Date", "type": "temporal", "title": "Month"},
-        },
-  "layer": [
-    {
-      "encoding": {
-        "y": {
-          "field": "Rate",
-          "type": "quantitative",
-          "title": "Inflation Rate"
-        }
-      },
-      "layer": [
-        {"mark": {
-        "type": "line",
-        "point": false,
-        "interpolate": "step",
-        "color": "red"
-        },
-        },
-        {
-          "transform": [{"filter": {"param": "hover", "empty": false}}],
-      "mark": {"type": "circle", "size": 100, "color": "red"},
-        }
-      ]
+    "x": {"field": "year", "type": "temporal", "title": "Year"},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Exports and Imports"
     },
-    {
-      "mark": "rule",
-      "encoding": {
-        "opacity": {
-          "condition": { "param": "hover", "empty": false, "value": 0.5},
-          "value": 0
-        },
-        "tooltip": [
-          {
-            "field": "Date",
-            "type": "temporal",
-            "format": "%b-%Y",
-            "title": "Date"
-          },
-          {
-            "field": "Rate",
-            "type": "quantitative",
-            "format": ",.2f",
-            "title": "Rate (%)"
-          }
-        ]
-      },
-      "params": [
-        {
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "on": "mouseover",
-            "clear": "mouseout",
-            "fields": ["Date"],
-            "nearest": true
-          }
-
-        }
-      ]
-    }
-  ]
+    "color": {
+      "field": "type",
+      "type": "nominal",
+      "scale": {"range": ["green", "orange"]},
+      "title": "Trade Type"
+    },
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "type", "type": "nominal", "title": "Type"},
+      {"field": "value", "type": "quantitative", "title": "Amount (mln $)"}
+    ]
+  }
 }
