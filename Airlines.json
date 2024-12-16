@@ -1,6 +1,9 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
-  "data": {"name": "data-9e9ad6c1261492cc51b797c556c3630e"},
+  "data": {
+    "name": "data-9e9ad6c1261492cc51b797c556c3630e"
+  },
   "mark": "bar",
   "title": {
     "text": "Forbes' world's biggest public airline companies by revenue",
@@ -14,9 +17,7 @@
       "field": "Airline",
       "type": "nominal",
       "sort": "-x",
-      "axis": {
-        "title": ""
-      }
+      "axis": {"title": ""}
     },
     "x": {
       "field": "Revenue",
@@ -25,9 +26,21 @@
         "labelExpr": "'$' + datum.value + 'b'",
         "title": ""
       }
-    }
+    },
+    "tooltip": [
+      {
+        "field": "Airline",
+        "type": "nominal",
+        "title": "Airline"
+      },
+      {
+        "field": "Revenue",
+        "type": "quantitative",
+        "title": "Revenue (in $B)",
+        "format": ".1f"
+      }
+    ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
   "datasets": {
     "data-9e9ad6c1261492cc51b797c556c3630e": [
       {
