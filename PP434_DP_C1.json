@@ -1,66 +1,66 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "An interactive scatterplot showing the the number of participants of the COP events of UNFCCC.",
-    "width": 300,
-    "height": 300,
-    "title": {
-      "text": "Total attendance at COPs",
-      "subtitle": "",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "middle",
-      "color": "black",
-      "offset": 10
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C1.csv",
-      "format": {"type": "dsv", "delimiter": ";"}
-    },
-    "layer": [
-      {
-        "mark": {"type": "point", "tooltip": true},
-        "encoding": {
-          "x": {
-            "field": "Date",
-            "type": "nominal",
-            "title": "Year",
-            "axis": {
-              "labelAngle": 45,
-              "labelOverlap": true,
-              "tickCount": 10, 
-              "labelPadding": 10,
-              "grid": true
-            }
-          },
-          "y": {
-            "field": "Participation",
-            "type": "quantitative",
-            "title": "Number of the Participants",
-            "scale": {"domainMin": 0}
-          },
-          "tooltip": [
-            {"field": "Name", "title": "Name"},
-            {"field": "Date", "title": "Year"},
-            {"field": "Participation", "title": "Participants"},
-            {"field": "Regional Group", "title": "Regional Group"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "line", "color": "red", "strokeWidth": 2},
-        "transform": [
-          {"regression": "Participation", "on": "Date", "method": "linear"}
-        ],
-        "encoding": {
-          "x": {"field": "Date", "type": "nominal"},
-          "y": {"field": "Participation", "type": "quantitative"}
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "An interactive scatterplot showing the number of participants of the COP events of UNFCCC.",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Total attendance at COPs",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black",
+    "offset": 10
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C1.csv",
+    "format": {"type": "dsv", "delimiter": ";"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "color": "green", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "nominal",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 45,
+            "labelOverlap": true,
+            "tickCount": 10, 
+            "labelPadding": 10,
+            "grid": true
+          }
+        },
+        "y": {
+          "field": "Participation",
+          "type": "quantitative",
+          "title": "Number of the Participants",
+          "scale": {"domainMin": 0}
+        },
+        "tooltip": [
+          {"field": "Name", "title": "Name"},
+          {"field": "Date", "title": "Year"},
+          {"field": "Participation", "title": "Participants"},
+          {"field": "Regional Group", "title": "Regional Group"}
+        ]
       }
-    ],
-    "selection": {
-      "grid": {
-        "type": "interval",
-        "bind": "scales"
+    },
+    {
+      "mark": {"type": "line", "color": "darkgreen", "strokeWidth": 2},
+      "transform": [
+        {"regression": "Participation", "on": "Date", "method": "linear"}
+      ],
+      "encoding": {
+        "x": {"field": "Date", "type": "nominal"},
+        "y": {"field": "Participation", "type": "quantitative"}
       }
     }
-  }  
+  ],
+  "selection": {
+    "grid": {
+      "type": "interval",
+      "bind": "scales"
+    }
+  }
+}

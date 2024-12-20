@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Interactive bar chart with participant categories sorted from largest to smallest.",
+  "title": {
+    "text": "Division of the Participant Categories",
+    "fontSize": 20,
+    "font": "Arial",
+    "anchor": "middle",
+    "color": "#333"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C2.csv",
+    "format": {"type": "dsv", "delimiter": ";"}
+  },
+  "width": 600,
+  "height": 400,
+  "encoding": {
+    "y": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Participant Categories",
+      "sort": [ "Parties", "Other/Staff", "Overflow", "NGO observers", "Virtual", "Media", "IGO observers", "UN secretariat observers", "UN specialised agency observers", "Observer states"],
+      "axis": {"titleFontSize": 14, "labelFontSize": 12, "labelAngle": 0}
+    },
+    "x": {
+      "field": "Number",
+      "type": "quantitative",
+      "title": "Number of Participants",
+      "axis": {"titleFontSize": 14, "labelFontSize": 12, "grid": true}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "color": {
+          "field": "Number",
+          "type": "quantitative",
+          "scale": {"scheme": "greens"},
+          "legend": {"title": "Number of Participants"}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3
+      },
+      "encoding": {
+        "text": {"field": "Number", "type": "quantitative"},
+        "color": {"value": "black"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "Arial",
+      "titleFont": "Arial",
+      "labelColor": "#555",
+      "titleColor": "#333"
+    }
+  }
+}
