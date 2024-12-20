@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C3.csv",
+    "format": {"type": "dsv", "delimiter": ";"}
+  },
+  "title": {
+    "text": "Distribution of COP Conferences across 5 UNFCCC Regional Groups",
+    "subtitle": [
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "fontSize": 16,
+    "fontWeight": "bold",
+    "anchor": "middle"
+  },
+  "height": 300,
+  "mark": {
+    "type": "circle",
+    "opacity": 1,
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "Number of COPs",
+      "type": "quantitative",
+      "scale": {"domain": [0, 15]},
+      "axis": {"grid": false},
+      "title": "Number of COPs"
+    },
+    "y": {
+      "field": "Total Participation",
+      "type": "quantitative",
+      "scale": {"domain": [0, 500000]},
+      "axis": {"grid": false},
+      "title": "Total Participation"
+    },
+    "size": {
+      "field": "Number of COPs",
+      "type": "quantitative",
+      "scale": {"range": [100, 3000]},
+      "legend": null
+    },
+    "color": {
+      "field": "Regional Group",
+      "type": "nominal",
+      "scale": {
+        "scheme": "greens"
+      },
+      "title": "Region"
+    },
+    "tooltip": [
+      {"field": "Regional Group", "type": "ordinal", "title": "Region"},
+      {"field": "Number of COPs", "type": "quantitative", "title": "Number of COPs"},
+      {"field": "Total Participation", "type": "quantitative", "title": "Total Participation"}
+    ]
+  },
+  "selection": {
+    "grid": {
+      "type": "interval",
+      "bind": "scales",
+      "zoom": "wheel!",
+      "pan": "drag!"
+    },
+    "highlight": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "none",
+      "encodings": ["x", "y"]
+    }
+  },
+  "config": {
+    "view": {"stroke": "transparent", "padding": 20},
+    "mark": {"tooltip": {"content": "data"}}
+  }
+}
