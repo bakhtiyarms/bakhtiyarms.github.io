@@ -1,31 +1,31 @@
-﻿Name;Participation
-COP 1 - Berlin;3969
-COP 2 - Geneva;1584
-COP 3 - Kyoto;9850
-COP 4 - Buenos Aires;5623
-COP 5 - Bonn;4188
-COP 6 - The Hague;6994
-COP 6-2 - Bonn;4628
-COP 7 - Marrakech;4460
-COP 8 - New Delhi;4352
-COP 9 - Milan;5151
-COP 10 - Buenos Aires;6151
-COP 11 - Montreal;9474
-COP 12 - Nairobi;5948
-COP 13 - Bali;10829
-COP 14 - Poznań;9252
-COP 15 - Copenhagen;27301
-COP 16 - Cancún;11848
-COP 17 - Durban;12489
-COP 18 - Doha;9004
-COP 19 - Warsaw;8375
-COP 20 - Lima;11185
-COP 21 - Paris;30372
-COP 22 - Marrakech;22564
-COP 23 - Bonn;16028
-COP 24 - Katowice;18419
-COP 25 - Madrid;22351
-COP 26 - Glasgow;38457
-COP 27 - Sharm El Sheikh;49703
-COP 28 - Dubai;85973
-COP 29 - Baku;70753
+﻿Name;Date;Participation;Regional Group
+COP 1 - Berlin;1995;3969;Western Europe and Other Group
+COP 2 - Geneva;1996;1584;Western Europe and Other Group
+COP 3 - Kyoto;1997;9850;Asia and Pacific Group
+COP 4 - Buenos Aires;1998;5623;Group of Latin America and the Caribbean 
+COP 5 - Bonn;1999;4188;Western Europe and Other Group
+COP 6 - The Hague;2000;6994;Western Europe and Other Group
+COP 6-2 - Bonn;2001;4628;Western Europe and Other Group
+COP 7 - Marrakech;2001;4460;Africa Group
+COP 8 - New Delhi;2002;4352;Asia and Pacific Group
+COP 9 - Milan;2003;5151;Western Europe and Other Group
+COP 10 - Buenos Aires;2004;6151;Group of Latin America and the Caribbean 
+COP 11 - Montreal;2005;9474;Western Europe and Other Group
+COP 12 - Nairobi;2006;5948;Africa Group
+COP 13 - Bali;2007;10829;Asia and Pacific Group
+COP 14 - Poznań;2008;9252;Eastern Europe Group
+COP 15 - Copenhagen;2009;27301;Western Europe and Other Group
+COP 16 - Cancún;2010;11848;Group of Latin America and the Caribbean 
+COP 17 - Durban;2011;12489;Africa Group
+COP 18 - Doha;2012;9004;Asia and Pacific Group
+COP 19 - Warsaw;2013;8375;Eastern Europe Group
+COP 20 - Lima;2014;11185;Group of Latin America and the Caribbean 
+COP 21 - Paris;2015;30372;Western Europe and Other Group
+COP 22 - Marrakech;2016;22564;Africa Group
+COP 23 - Bonn;2017;16028;Western Europe and Other Group
+COP 24 - Katowice;2018;18419;Eastern Europe Group
+COP 25 - Madrid;2019;22351;Western Europe and Other Group
+COP 26 - Glasgow;2021;38457;Western Europe and Other Group
+COP 27 - Sharm El Sheikh;2022;49703;Africa Group
+COP 28 - Dubai;2023;85973;Asia and Pacific Group
+COP 29 - Baku;2024;70753;Eastern Europe Group
