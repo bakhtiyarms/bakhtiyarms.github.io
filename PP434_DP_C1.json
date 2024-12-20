@@ -1,79 +1,66 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Interactive bar chart with hover and click effects.",
-  "title": {
-    "text": "Total attendance at COPs",
-    "subtitle": ["1995-2025"],
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "subtitlePadding": 5,
-    "anchor": "middle",
-    "color": "black"
-  },
-  "width": 400,
-  "data": {
-    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C1.csv",
-    "format": {"type": "dsv", "delimiter": ";"}
-  },
-  "encoding": {
-    "y": {
-      "field": "Name",
-      "type": "nominal",
-      
-    "sort": {"field": "_vgsid_", "order": "descending"},
-    "title": "COPs"},
-    "x": {
-      "field": "Participation",
-      "type": "quantitative",
-      "title": "Overall participant numbers"
-    }
-  },
-  "layer": [
-    {
-      "mark": {
-        "type": "bar",
-        "color": "lightgreen"
-      },
-      "params": [
-        {
-          "name": "highlight",
-          "select": {
-            "type": "point",
-            "on": "mouseover",
-            "clear": true
-          }
-        }
-      ],
-
-      "encoding": {
-        "opacity": {
-          "condition": {
-            "param": "highlight",
-            "value": 1,
-            "empty": true
-          },
-          "value": 0.6
-        }
-      }
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "An interactive scatterplot showing the the number of participants of the COP events of UNFCCC.",
+    "width": 300,
+    "height": 300,
+    "title": {
+      "text": "Total attendance at COPs",
+      "subtitle": "",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black",
+      "offset": 10
     },
-    {
-      "mark": {"type": "text", "align": "left", "xOffset": 4, "aria": false}, 
-      
-      "encoding": {
-        "text": {"field": "Participation", "type": "quantitative"},
-        "color": {
-          "condition": {"test": {"field": "count", "gt": 10}, "value": "white"},
-          "value": "black"
-        },
-        "opacity": {
-          "condition": {
-            "param": "highlight",
-            "value": 1,
-            "empty": false
+    "data": {
+      "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C1.csv",
+      "format": {"type": "dsv", "delimiter": ";"}
+    },
+    "layer": [
+      {
+        "mark": {"type": "point", "tooltip": true},
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "nominal",
+            "title": "Year",
+            "axis": {
+              "labelAngle": 45,
+              "labelOverlap": true,
+              "tickCount": 10, 
+              "labelPadding": 10,
+              "grid": true
+            }
           },
-          "value": 0
+          "y": {
+            "field": "Participation",
+            "type": "quantitative",
+            "title": "Number of the Participants",
+            "scale": {"domainMin": 0}
+          },
+          "tooltip": [
+            {"field": "Name", "title": "Name"},
+            {"field": "Date", "title": "Year"},
+            {"field": "Participation", "title": "Participants"},
+            {"field": "Regional Group", "title": "Regional Group"}
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "red", "strokeWidth": 2},
+        "transform": [
+          {"regression": "Participation", "on": "Date", "method": "linear"}
+        ],
+        "encoding": {
+          "x": {"field": "Date", "type": "nominal"},
+          "y": {"field": "Participation", "type": "quantitative"}
         }
       }
+    ],
+    "selection": {
+      "grid": {
+        "type": "interval",
+        "bind": "scales"
+      }
     }
-  ]
-}
+  }  
