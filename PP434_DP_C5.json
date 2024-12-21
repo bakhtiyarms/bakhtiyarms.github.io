@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Annual CO₂ emissions over time.",
+  "height": 400,
+  "width": 500,
+  "title": {
+    "text": "Annual Worldwide CO₂ emissions",
+    "subtitle": "since the first COP convened in 1995"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C5.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "black",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "title": "Year"
+        },
+        "y": {
+          "field": "Annual CO₂ emissions",
+          "type": "quantitative",
+          "axis": {
+            "title": ["in billion tonnes"],
+            
+            "labelExpr": "datum.value / 1000000000 + 'b'"
+          }
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative", "title": "Year"},
+          {
+            "field": "Annual CO₂ emissions",
+            "type": "quantitative",
+            "title": "Emissions",
+            
+            "formatExpr": "datum.value / 1000000000 + 'b'"
+          }
+        ]
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"datum": 1995, "type": "quantitative"},
+        "color": {"value": "red"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": -10,
+        "dx": 5
+      },
+      "encoding": {
+        "x": {"datum": 1995, "type": "quantitative"},
+        "y": {"datum": 10000000000, "type": "quantitative"},
+        "text": {"value": "First COP"}
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"datum": 2015, "type": "quantitative"},
+        "color": {"value": "blue"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": -10,
+        "dx": 5
+      },
+      "encoding": {
+        "x": {"datum": 2015, "type": "quantitative"},
+        "y": {"datum": 15000000000, "type": "quantitative"},
+        "text": {"value": "Paris Agreement"}
+      }
+    }
+  ]
+}
