@@ -23,20 +23,20 @@
         header {
             background-color: #4CAF50;
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             margin: 0;
         }
 
         header h2 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: 400;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         section {
@@ -79,17 +79,16 @@
         footer {
             background-color: #4CAF50;
             color: #fff;
-            padding: 10px 0;
+            padding: 5px 0;
             text-align: center;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
         }
 
         .footer-links a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
         }
 
@@ -111,6 +110,17 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Ensure the footer doesn't obstruct content */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
     </style>
 </head>
 
@@ -120,35 +130,37 @@
         <h2>Climate Conversations: Visualising Inclusivity Through COP Participation and Representation</h2>
     </header>
 
-    <section>
-        <h2>Aim of the Project</h2>
-        <p>The United Nations Climate Change Conferences are annual conferences held in the framework of the United Nations Framework Convention on Climate Change (UNFCCC)...</p>
-    </section>
+    <main>
+        <section>
+            <h2>Aim of the Project</h2>
+            <p>The United Nations Climate Change Conferences are annual conferences held in the framework of the United Nations Framework Convention on Climate Change (UNFCCC)...</p>
+        </section>
 
-    <section>
-        <div class="chart-container">
-            <figure id="Location1"></figure>
-            <figure id="Location2"></figure>
-            <figure id="Location3"></figure>
-            <figure id="Location4"></figure>
-            <figure id="Location5"></figure>
-        </div>
-    </section>
+        <section>
+            <div class="chart-container">
+                <figure id="Location1"></figure>
+                <figure id="Location2"></figure>
+                <figure id="Location3"></figure>
+                <figure id="Location4"></figure>
+                <figure id="Location5"></figure>
+            </div>
+        </section>
 
-    <section>
-        <h2>The Data</h2>
-        <p>The majority of data comes from the UNFCCC sources...</p>
-    </section>
+        <section>
+            <h2>The Data</h2>
+            <p>The majority of data comes from the UNFCCC sources...</p>
+        </section>
 
-    <section>
-        <h2>Analytical Challenges</h2>
-        <p>There were a number of challenges encountered during the project...</p>
-    </section>
+        <section>
+            <h2>Analytical Challenges</h2>
+            <p>There were a number of challenges encountered during the project...</p>
+        </section>
 
-    <section>
-        <h2>Conclusions</h2>
-        <p>The analysis highlights several key findings...</p>
-    </section>
+        <section>
+            <h2>Conclusions</h2>
+            <p>The analysis highlights several key findings...</p>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-links">
