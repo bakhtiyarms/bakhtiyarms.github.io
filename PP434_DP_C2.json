@@ -2,40 +2,63 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive bar chart with participant categories sorted from largest to smallest.",
   "title": {
-    "text": "Division of the Participant Categories",
-    "fontSize": 20,
-    "font": "Arial",
+    "text": "Division of the Participant Categories at COP29",
+    "subtitle": "Source: COP29 Presidency",
+    "subtitleColor": "darkgreen",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 15,
     "anchor": "middle",
-    "color": "#333"
+    "fontSize": 20,
+    "color": "darkgreen",
+    "offset": 10
   },
   "data": {
     "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C2.csv",
     "format": {"type": "dsv", "delimiter": ";"}
   },
-  "width": 600,
-  "height": 400,
+  "width": 750,
+  "height": 500,
   "encoding": {
     "y": {
       "field": "Category",
       "type": "nominal",
       "title": "Participant Categories",
-      "sort": [ "Parties", "Other/Staff", "Overflow", "NGO observers", "Virtual", "Media", "IGO observers", "UN secretariat observers", "UN specialised agency observers", "Observer states"],
-      "axis": {"titleFontSize": 14, "labelFontSize": 12, "labelAngle": 0}
+      "sort": [
+        "Parties",
+        "Other/Staff",
+        "Overflow",
+        "NGO observers",
+        "Virtual",
+        "Media",
+        "IGO observers",
+        "UN secretariat observers",
+        "UN specialised agency observers",
+        "Observer states"
+      ],
+      "axis": {
+        "labelAngle": 0,
+        "titleColor": "darkgreen",
+        "labelColor": "darkgreen",
+        "labelFontSize": 15,
+        "titleFontSize": 15
+        }
     },
     "x": {
       "field": "Number",
       "type": "quantitative",
       "title": "Number of Participants",
-      "axis": {"titleFontSize": 14, "labelFontSize": 12, "grid": true}
+      "axis": {
+        "grid": true,
+        "titleColor": "darkgreen",
+        "labelColor": "darkgreen",
+        "labelFontSize": 15,
+        "titleFontSize": 15
+      }
     }
   },
   "layer": [
     {
-      "mark": {
-        "type": "bar",
-        "tooltip": true,
-        "cursor": "pointer"
-      },
+      "mark": {"type": "bar", "tooltip": true, "cursor": "pointer"},
       "encoding": {
         "color": {
           "field": "Number",
@@ -46,12 +69,7 @@
       }
     },
     {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 3
-      },
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3},
       "encoding": {
         "text": {"field": "Number", "type": "quantitative"},
         "color": {"value": "black"}
