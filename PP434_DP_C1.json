@@ -1,15 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "An interactive scatterplot showing the number of participants of the COP events of UNFCCC.",
-  "width": 300,
-  "height": 300,
+  "width": 600,
+  "height": 400,
   "title": {
-    "text": "Total attendance at COPs",
-    "subtitle": "",
+    "text": "Total Attendance at All 29 COPs",
+    "subtitle": "Source: UNFCCC",
+    "subtitleColor": "darkgreen",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "middle",
-    "color": "black",
+    "color": "darkgreen",
     "offset": 10
   },
   "data": {
@@ -27,16 +28,22 @@
           "axis": {
             "labelAngle": 45,
             "labelOverlap": true,
-            "tickCount": 10, 
+            "tickCount": 10,
             "labelPadding": 10,
-            "grid": true
+            "grid": true,
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen"
           }
         },
         "y": {
           "field": "Participation",
           "type": "quantitative",
           "title": "Number of the Participants",
-          "scale": {"domainMin": 0}
+          "scale": {"domainMin": 0},
+          "axis": {
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen"
+          }
         },
         "tooltip": [
           {"field": "Name", "title": "Name"},
@@ -57,10 +64,5 @@
       }
     }
   ],
-  "selection": {
-    "grid": {
-      "type": "interval",
-      "bind": "scales"
-    }
-  }
+  "selection": {"grid": {"type": "interval", "bind": "scales"}}
 }
