@@ -2,27 +2,23 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive line chart with point highlighting on hover.",
   "title": {
-    "text": "NGOs that have been admitted by the COP as observer organisations to the UNFCCC process",
+    "text": "NGOs Admitted as Observers to UNFCCC by COPs",
+    "subtitle": "Source: UNFCCC and Carbon Brief",
+    "subtitleColor": "darkgreen",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 15,
     "anchor": "middle",
+    "fontSize": 20,
     "color": "darkgreen",
-    "offset": 15
+    "offset": 10
   },
-  "height": 350,
-  "width": 550,
+  "width": 750,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C4.csv",
-    "format": {
-      "type": "dsv",
-      "delimiter": ";"
-    }
+    "format": {"type": "dsv", "delimiter": ";"}
   },
-  "mark": {
-    "type": "line",
-    "color": "green",
-    "strokeWidth": 3
-  },
+  "mark": {"type": "line", "color": "green", "strokeWidth": 3},
   "encoding": {
     "opacity": {
       "condition": {"param": "hover", "empty": true, "value": 0.5},
@@ -36,20 +32,30 @@
         "labelOverlap": false,
         "tickCount": 5,
         "labelPadding": 10,
-        "grid": true
+        "grid": true,
+        "titleColor": "darkgreen",
+        "labelColor": "darkgreen",
+        "labelFontSize": 15,
+        "titleFontSize": 15
       },
       "sort": {"field": "COPNumber", "order": "ascending"}
     },
     "y": {
       "field": "NGOs",
-      "type": "quantitative"
-    },
+      "type": "quantitative",
+      "axis": {
+        "titleColor": "darkgreen",
+        "labelColor": "darkgreen",
+        "labelFontSize": 15,
+        "titleFontSize": 15
+      }
+      },
     "tooltip": [
       {"field": "Name", "type": "ordinal"},
       {"field": "NGOs", "type": "quantitative"}
     ]
   },
-  "params":[
+  "params": [
     {
       "name": "hover",
       "select": {
