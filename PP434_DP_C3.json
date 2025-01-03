@@ -10,7 +10,7 @@
     "subtitleColor": "darkgreen",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 15,
-    "anchor": "start",
+    "anchor": "middle",
     "fontSize": 20,
     "color": "darkgreen",
     "offset": 20
