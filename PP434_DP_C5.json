@@ -11,7 +11,7 @@
     "subtitleFontSize": 15,
     "anchor": "middle",
     "fontSize": 20,
-    "color": "darkgreen",  // Title color
+    "color": "darkgreen",
     "offset": 10
   },
   "data": {
