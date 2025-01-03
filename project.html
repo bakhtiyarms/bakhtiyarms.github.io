@@ -55,29 +55,35 @@
             text-align: justify;
         }
 
-        .chart-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        figure {
+        .chart-container figure {
             flex: 1 1 48%;
             max-width: 48%;
-            background-color: #ffffff;
+            background-color: #afd49c;
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 8px;
             text-align: center;
+            overflow: hidden; /* Prevent charts from overflowing */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+
+        .chart-container figure > div {
+            max-width: auto;
+            height: auto;
         }
 
         footer {
             background-color: #4CAF50;
             color: #fff;
-            padding: 5px 0;
+            padding: 10px 0;
             text-align: center;
             position: center;
             width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center; /* Center-align the footer text */
         }
 
         /* Add hover effects */
