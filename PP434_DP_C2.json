@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Interactive bar chart with participant categories sorted from largest to smallest.",
   "title": {
-    "text": "Division of the Participant Categories at COP29",
-    "subtitle": "Source: COP29 Presidency",
+    "text": "Changes in Participant Category Divisions between COP28 and COP29",
+    "subtitle": "Source: UNFCCC, Carbon Brief, and COP28 & COP29 Presidencies",
     "subtitleColor": "darkgreen",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 15,
@@ -13,9 +13,26 @@
     "offset": 10
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C2.csv",
+    "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C2_final.csv",
     "format": {"type": "dsv", "delimiter": ";"}
   },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2023,
+      "bind": {
+        "input": "select",
+        "options": [
+          2023,
+          2024
+        ],
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Year == selectedYear"}
+  ],
   "width": 750,
   "height": 500,
   "encoding": {
@@ -41,7 +58,7 @@
         "labelColor": "darkgreen",
         "labelFontSize": 15,
         "titleFontSize": 15
-        }
+      }
     },
     "x": {
       "field": "Number",
