@@ -39,25 +39,43 @@
             padding: 40px 20px;
             max-width: 1200px;
             margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2ea056;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #555;
         }
 
         .chart-container {
             display: flex;
-            justify-content: center; /* Centers content horizontally */
-            align-items: center;    /* Centers content vertically */
-            flex-direction: column; /* Ensures charts stack vertically if needed */
-            flex-wrap: nowrap;      /* Prevents charts from wrapping */
-            gap: 20px;              /* Adds space between charts */
-            width: 100%;            /* Takes the full width of the page */
-            margin: 0 auto;         /* Ensures the container is centered */
-            padding: 10px;          /* Optional padding for aesthetics */
-            box-sizing: border-box; /* Includes padding in width calculation */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         figure {
-            max-width: 600px;       /* Limits the width of each chart */
-            width: 100%;            /* Makes charts responsive */
-            margin: 0 auto;         /* Centers each chart */
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
             background-color: #ffffff;
             border: 1px solid #ddd;
             padding: 10px;
@@ -65,16 +83,10 @@
             border-radius: 8px;
         }
 
-        .chart-description {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
         footer {
             background-color: #2ea056;
             color: #ecf0f1;
-            padding: 3px 0;
+            padding: 10px 0;
             text-align: center;
             position: fixed;
             width: 100%;
@@ -101,19 +113,11 @@
     </header>
 
     <section>
-            <h2>Aim of the Project</h2>
-            <p>The United Nations Climate Change Conferences are annual conferences held in the framework of the United Nations Framework Convention on Climate Change (UNFCCC).
-                The Conferences are also known as the Conference of the Parties (COP) since they serve as the formal meeting of the UNFCCC parties to assess progress in dealing with climate change. The first COP was held in 1995 in Berlin, Germany, and the most recent conference - COP29 was held in in 2024 in Baku, Azerbaijan. In the last COP, a new Baku Finance Goal, known as the #BakuBreakthrough, was reached that sets new global target to channel $1.3tn of climate finance to developing countries by 2035 in significant uplift. Another main document of the Conference is the Paris Agreement, which is an international treaty on climate change that was signed in 2016 and covers climate change mitigation, adaptation, and finance.
-                
-                Consequently, the main aim of this project is to analyse the inclusivity of COP events over time over time by constructing various graphs and visualisations. Inclusivity is assessed based on such metrics as participant diversity, regional representation distribution, and the involvement of non-governmental organisations (NGOs). Through an analysis of attendance trends, participant categories, regional hosting dynamics, observer NGO involvement, and global CO₂ emissions, this report aims to shed light on the evolution of COP events, which significant resources are spent on, and their role in fostering inclusive global dialogue on climate action.
-                
-                It is important to highlight that the term “party” or “parties” refer to the states that are both parties to the UNFCCC and represented at the COP.
-                </p>
+        <h2>Aim of the Project</h2>
+        <p>[... your improved text ...]</p>
     </section>
 
     <section>
-        <div class="chart-description">
-        </div>
         <div class="chart-container">
             <figure id="Location1"></figure>
             <figure id="Location2"></figure>
@@ -124,37 +128,9 @@
     </section>
 
     <section>
-            <h2>The Data</h2>
-            <p>The majority of data comes from the UNFCCC sources that collects and presents the data and visualisations in a publicly accessible format. It is also possible to download CSV files for most of the visualisations presented on the UNFCCC website. It helped me obtain the primary data later which I cleaned and adjusted for my own charts.
-
-                The next data source is the official websites of each individual COP events, such as cop28.com and cop29.az. These websites were particularly useful to delve into more detailed statistics and gather particular information on the individual COP trends.
-                
-                Another data source is Carbon Brief, which is a UK-based website covering the latest developments in climate science, climate policy and energy policy. Since it specialises in clear, data-driven articles, it helped me improve the understanding of climate change, both in terms of the science and the policy response.
-                </p>
+        <h2>The Data</h2>
+        <p>[... your improved text ...]</p>
     </section>
-
-    <section>
-        <h2>Analytical Challenges</h2>
-        <p>There were a number of challenges encountered during the project. 
-
-            For this analysis, it was not possible to create charts that automatically updates because there were not particular API sources in this topic. While the topic concerns about an important issue – reaching inclusivity in climate action – worldwide, the main data sources and databases belong to the UNFCCC and individual COP hosting states that do not produce APIs. Although it was possible to find some API sources for particular parties, such as in the case of the UK, it was not feasible to present a whole analysis of the UNFCCC and COP parties as a whole. Therefore, I mainly used CSV files for my data analysis.
-            
-            The second one was related to data inconsistencies. Particularly, attendance records from earlier COP events were either incomplete or inconsistent; therefore, it required me to work more on data cleaning for accurate trend analysis.
-            
-            Another challenge was related to categorical overlap in participat categories. The main aim of this project was to analyse the inclusivity in COP events and, therefore, the participation of NGOs was the primary target of analysis. However, some participants belonged to multiple categories that complicated the classification of participant categories. For instance, academic affiliations were shown both in academic and NGO classification in some contexts.
-            
-            It was also sophisticated to determine the adequacy of regional representation since it required contextual benchmarks parties’ population size or emissions but for most cases, this information was not consistently accessible across datasets.
-            
-            Although the UNFCCC provided broad overview of NGO participation in COPs, detailed data on the scale of involvement, for instance, number or exact size of delegates were sometimes missing, restricting the extent of analysis.
-            </p>
-</section>
-
-<section>
-        <h2>Conclusions</h2>
-        <p>TThe analysis highlights several key findings.
-
-        </p>
-</section>
 
     <footer>
         <div class="footer-links">
@@ -163,21 +139,6 @@
         </div>
         <p>&copy; 2024 Bakhtiyar Salmanov | All Rights Reserved</p>
     </footer>
-
-    <script>
-        let figure_1_spec = "PP434_DP_C1.json";
-        let figure_2_spec = "PP434_DP_C2.json";
-        let figure_3_spec = "PP434_DP_C3.json";
-        let figure_4_spec = "PP434_DP_C4.json";
-        let figure_5_spec = "PP434_DP_C5.json";
-
-        vegaEmbed('#Location1', figure_1_spec);
-        vegaEmbed('#Location2', figure_2_spec);
-        vegaEmbed('#Location3', figure_3_spec);
-        vegaEmbed('#Location4', figure_4_spec);
-        vegaEmbed('#Location5', figure_5_spec);
-    </script>
-
 </body>
 
 </html>
