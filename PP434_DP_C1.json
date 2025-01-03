@@ -8,8 +8,9 @@
     "subtitle": "Source: UNFCCC",
     "subtitleColor": "darkgreen",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 15,
     "anchor": "middle",
+    "fontSize": 20,
     "color": "darkgreen",
     "offset": 10
   },
@@ -32,7 +33,9 @@
             "labelPadding": 10,
             "grid": true,
             "titleColor": "darkgreen",
-            "labelColor": "darkgreen"
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
           }
         },
         "y": {
@@ -42,7 +45,9 @@
           "scale": {"domainMin": 0},
           "axis": {
             "titleColor": "darkgreen",
-            "labelColor": "darkgreen"
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
           }
         },
         "tooltip": [
