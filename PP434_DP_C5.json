@@ -1,35 +1,47 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Annual CO₂ emissions over time.",
-  "height": 400,
-  "width": 500,
+  "width": 750,
+  "height": 500,
   "title": {
-    "text": "Annual Worldwide CO₂ emissions",
-    "subtitle": "since the first COP convened in 1995"
+    "text": "Annual Worldwide CO₂ emissions Amid the First COP & Paris Agreement",
+    "subtitle": "Source: World Bank and International Energy Agency",
+    "subtitleColor": "darkgreen",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 15,
+    "anchor": "middle",
+    "fontSize": 20,
+    "color": "darkgreen",  // Title color
+    "offset": 10
   },
   "data": {
     "url": "https://raw.githubusercontent.com/bakhtiyarms/bakhtiyarms.github.io/refs/heads/main/PP434_DP_C5.csv"
   },
   "layer": [
     {
-      "mark": {
-        "type": "line",
-        "color": "black",
-        "tooltip": true
-      },
+      "mark": {"type": "line", "color": "black", "tooltip": true},
       "encoding": {
         "x": {
           "field": "Year",
           "type": "quantitative",
-          "title": "Year"
+          "title": "Year",
+          "axis": {
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+          }
         },
         "y": {
           "field": "Annual CO₂ emissions",
           "type": "quantitative",
           "axis": {
             "title": ["in billion tonnes"],
-            
-            "labelExpr": "datum.value / 1000000000 + 'b'"
+            "labelExpr": "datum.value / 1000000000",
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
           }
         },
         "tooltip": [
@@ -38,7 +50,6 @@
             "field": "Annual CO₂ emissions",
             "type": "quantitative",
             "title": "Emissions",
-            
             "formatExpr": "datum.value / 1000000000 + 'b'"
           }
         ]
@@ -52,16 +63,11 @@
       }
     },
     {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dy": -10,
-        "dx": 5
-      },
+      "mark": {"type": "text", "align": "left", "dy": -10, "dx": 5},
       "encoding": {
         "x": {"datum": 1995, "type": "quantitative"},
         "y": {"datum": 10000000000, "type": "quantitative"},
-        "text": {"value": "First COP"}
+        "text": {"value": "First COP in 1995"}
       }
     },
     {
@@ -72,16 +78,11 @@
       }
     },
     {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dy": -10,
-        "dx": 5
-      },
+      "mark": {"type": "text", "align": "left", "dy": -10, "dx": 5},
       "encoding": {
         "x": {"datum": 2015, "type": "quantitative"},
         "y": {"datum": 15000000000, "type": "quantitative"},
-        "text": {"value": "Paris Agreement"}
+        "text": {"value": "Paris Agreement in 2015"}
       }
     }
   ]
