@@ -3,7 +3,9 @@
   "title": {
     "text": "Trade Balance of Azerbaijan",
     "subtitle": [
-      "Total Value of Imports and Exports between 1991 - 2023 in mln $"
+      "Total Value of Imports and Exports between 1991 - 2023 in mln $",
+      "",
+      "Click on the trade type legend to view exports and imports interactively."
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 13,
@@ -42,6 +44,17 @@
       {"field": "year", "type": "temporal", "title": "Year"},
       {"field": "type", "type": "nominal", "title": "Type"},
       {"field": "value", "type": "quantitative", "title": "Amount (mln $)"}
-    ]
+    ],
+    "opacity": {
+      "condition": {"selection": "highlight", "value": 1},
+      "value": 0.2
+    }
+  },
+  "selection": {
+    "highlight": {
+      "type": "multi",
+      "fields": ["type"],
+      "bind": "legend" 
+    }
   }
 }
