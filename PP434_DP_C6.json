@@ -1,0 +1,1829 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-d327f73e45f554154b3536429189241d"},
+    "mark": {"type": "area"},
+    "background": "white",
+    "encoding": {
+      "color": {
+        "field": "Country Name",
+        "scale": {
+          "range": [
+            "#006400",
+            "#228B22",
+            "#32CD32",
+            "#7CFC00",
+            "#ADFF2F",
+            "#98FB98",
+            "#90EE90"
+          ]
+        },
+        "type": "nominal"
+      },
+      "tooltip": [
+        {"field": "Country Name", "type": "nominal"},
+        {"field": "Year", "type": "ordinal"},
+        {
+          "field": "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)",
+          "type": "quantitative"
+        }
+      ],
+      "x": {"field": "Year", "type": "ordinal",
+          "axis": {
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+            }
+          },
+      "y": {
+        "field": "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)",
+        "title": "Total CO2e emissions in Mt",
+          "axis": {
+            "titleColor": "darkgreen",
+            "labelColor": "darkgreen",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+            },
+        "type": "quantitative"
+      }
+    },
+    "width": 750,
+    "height": 500,
+    "params": [
+      {
+        "name": "point",
+        "select": {
+          "type": "point",
+          "encodings": ["x"],
+          "nearest": true,
+          "on": "click"
+        }
+      }
+    ],
+      "title": {
+      "text": "Total Greenhouse Gas Emissions of G7 Countries",
+      "subtitle": "Source: World Bank",
+      "subtitleColor": "darkgreen",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 15,
+      "anchor": "middle",
+      "fontSize": 20,
+      "color": "darkgreen",
+      "offset": 10
+    },
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-d327f73e45f554154b3536429189241d": [
+        {
+          "Country Name": "Canada",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 533.7642
+        },
+        {
+          "Country Name": "France",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 683.5503
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1359.9833
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 454.2756
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1164.1203
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 843.7637
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1974",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5913.0306
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 518.8253
+        },
+        {
+          "Country Name": "France",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 642.9377
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1298.0757
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 436.2758
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1105.9931
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 831.6487
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1975",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5696.3362
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 530.4984
+        },
+        {
+          "Country Name": "France",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 686.8261
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1362.5818
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 467.0757
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1142.191
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 842.9629
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1976",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6011.3151
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 551.5862
+        },
+        {
+          "Country Name": "France",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 670.0107
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1338.5953
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 456.4589
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1170.0683
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 847.772
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1977",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6167.2631
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 558.4761
+        },
+        {
+          "Country Name": "France",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 687.4231
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1380.9302
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 466.8463
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1164.3747
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 849.373
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1978",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6159.6125
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 573.0379
+        },
+        {
+          "Country Name": "France",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 696.4438
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1432.6387
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 483.5455
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1190.0268
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 888.9606
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1979",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6226.2622
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 578.4447
+        },
+        {
+          "Country Name": "France",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 673.8417
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1378.4143
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 484.719
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1160.2868
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 820.479
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1980",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5993.3464
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 558.4993
+        },
+        {
+          "Country Name": "France",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 622.9276
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1341.7135
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 472.2207
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1133.636
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 801.0994
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1981",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5913.3384
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 539.4705
+        },
+        {
+          "Country Name": "France",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 601.8183
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1291.5205
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 463.3886
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1090.9671
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 784.8091
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1982",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5644.1548
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 540.9337
+        },
+        {
+          "Country Name": "France",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 587.3659
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1305.788
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 456.2922
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1094.6117
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 777.374
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1983",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5613.473
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 562.1285
+        },
+        {
+          "Country Name": "France",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 575.095
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1321.0414
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 465.0354
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1167.7178
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 733.1409
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1984",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5840.0296
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 557.5976
+        },
+        {
+          "Country Name": "France",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 559.3298
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1322.4662
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 465.6204
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1139.8622
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 775.676
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1985",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5848.3037
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 544.0986
+        },
+        {
+          "Country Name": "France",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 546.6873
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1311.2302
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 468.6608
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1135.5826
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 798.2254
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1986",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5801.434
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 560.1563
+        },
+        {
+          "Country Name": "France",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 536.7483
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1300.0911
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 495.0241
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1138.0007
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 799.9868
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1987",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5960.6193
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 594.2651
+        },
+        {
+          "Country Name": "France",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 533.3313
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1290.3786
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 495.7611
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1212.3843
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 795.8291
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1988",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6197.0904
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 616.4185
+        },
+        {
+          "Country Name": "France",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 541.6005
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1277.8564
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 512.4209
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1243.2972
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 778.8881
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1989",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6263.0741
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 582.1654
+        },
+        {
+          "Country Name": "France",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 534.7922
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1235.2345
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 513.6393
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1321.3145
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 785.5547
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1990",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6155.9535
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 577.0779
+        },
+        {
+          "Country Name": "France",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 565.5592
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1209.5119
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 511.1547
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1335.318
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 797.8067
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1991",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6108.1787
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 593.1563
+        },
+        {
+          "Country Name": "France",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 551.1519
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1145.9111
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 505.8708
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1344.6558
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 774.4728
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1992",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6207.2598
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 597.0651
+        },
+        {
+          "Country Name": "France",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 528.9083
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1132.6564
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 499.4708
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1340.9523
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 752.1212
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1993",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6334.1908
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 622.5805
+        },
+        {
+          "Country Name": "France",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 523.6191
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1118.3481
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 495.559
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1402.3586
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 743.8083
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1994",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6441.6296
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 637.4917
+        },
+        {
+          "Country Name": "France",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 534.1544
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1110.3433
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 522.2192
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1419.6527
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 740.196
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1995",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6510.9232
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 654.1133
+        },
+        {
+          "Country Name": "France",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 552.5576
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1137.9142
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 518.2246
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1432.0069
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 760.3263
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1996",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6681.0281
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 666.633
+        },
+        {
+          "Country Name": "France",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 539.0047
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1099.0196
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 522.2689
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1413.5706
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 736.7815
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1997",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6964.2546
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 675.0356
+        },
+        {
+          "Country Name": "France",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 551.0665
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1079.0151
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 531.8631
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1357.4848
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 727.5412
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1998",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7013.6096
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 686.0017
+        },
+        {
+          "Country Name": "France",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 543.4578
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1038.7965
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 539.2379
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1388.2189
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 701.0294
+        },
+        {
+          "Country Name": "United States",
+          "Year": "1999",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7016.9287
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 710.2549
+        },
+        {
+          "Country Name": "France",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 543.686
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1032.2857
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 545.6935
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1391.4509
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 700.1192
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2000",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7181.2241
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 700.2892
+        },
+        {
+          "Country Name": "France",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 548.0027
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1043.5843
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 542.2225
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1368.8645
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 709.7096
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2001",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7098.0481
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 723.2087
+        },
+        {
+          "Country Name": "France",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 541.5256
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1025.2094
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 551.6417
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1397.5578
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 689.0211
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2002",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6934.0397
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 741.6931
+        },
+        {
+          "Country Name": "France",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 544.7156
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1023.8532
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 570.405
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1402.0883
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 698.2169
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2003",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7000.213
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 737.7851
+        },
+        {
+          "Country Name": "France",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 545.6975
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1007.1142
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 579.4958
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1392.9628
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 691.9153
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2004",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7089.4915
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 745.2121
+        },
+        {
+          "Country Name": "France",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 546.1036
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 983.7129
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 580.335
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1402.15
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 681.2129
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2005",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7094.4271
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 742.8048
+        },
+        {
+          "Country Name": "France",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 532.2617
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 989.8322
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 568.1431
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1372.6418
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 673.9747
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2006",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6983.3721
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 776.9718
+        },
+        {
+          "Country Name": "France",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 526.539
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 958.4342
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 560.8064
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1407.7853
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 658.8605
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2007",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 7079.5382
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 750.0267
+        },
+        {
+          "Country Name": "France",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 519.399
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 960.1928
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 545.3152
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1332.3929
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 636.5795
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2008",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6900.1639
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 708.8918
+        },
+        {
+          "Country Name": "France",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 504.4666
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 896.2574
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 493.2645
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1263.3809
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 582.5419
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2009",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6432.4868
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 726.1349
+        },
+        {
+          "Country Name": "France",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 514.2563
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 940.9959
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 503.5432
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1326.2628
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 594.2596
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2010",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6679.1367
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 742.2145
+        },
+        {
+          "Country Name": "France",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 497.0022
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 912.9835
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 492.1974
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1375.5966
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 551.5783
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2011",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6478.0379
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 744.5577
+        },
+        {
+          "Country Name": "France",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 499.2107
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 925.5596
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 473.2515
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1412.9327
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 573.2484
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2012",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6234.3212
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 755.6255
+        },
+        {
+          "Country Name": "France",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 493.5974
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 942.9811
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 440.0386
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1429.1881
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 558.1893
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2013",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6375.1904
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 768.7587
+        },
+        {
+          "Country Name": "France",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 459.8354
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 902.8989
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 419.9919
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1377.1513
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 519.2542
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2014",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6402.7204
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 764.535
+        },
+        {
+          "Country Name": "France",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 464.1572
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 908.1324
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 430.2052
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1335.1082
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 504.4467
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2015",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6281.2777
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 758.5757
+        },
+        {
+          "Country Name": "France",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 466.2441
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 910.2047
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 424.8877
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1321.5024
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 484.2036
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2016",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6159.7847
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 772.8969
+        },
+        {
+          "Country Name": "France",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 469.2505
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 893.9396
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 422.7058
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1306.4717
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 470.143
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2017",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6103.414
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 787.6513
+        },
+        {
+          "Country Name": "France",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 455.7309
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 864.5847
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 417.4814
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1265.5424
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 463.3835
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2018",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6280.3192
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 775.3764
+        },
+        {
+          "Country Name": "France",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 445.8764
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 810.2707
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 405.2389
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1226.4328
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 446.2817
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2019",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6145.7474
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 711.4686
+        },
+        {
+          "Country Name": "France",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 405.3519
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 751.339
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 367.3238
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1161.3212
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 407.3352
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2020",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5607.9657
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 733.0817
+        },
+        {
+          "Country Name": "France",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 442.2225
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 792.4534
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 392.8665
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1174.9653
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 425.1052
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2021",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 5915.5787
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 756.8101
+        },
+        {
+          "Country Name": "France",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 429.9974
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 784.0046
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 394.6564
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 1182.3124
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 425.9522
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2022",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": 6009.5848
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "France",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        },
+        {
+          "Country Name": "United States",
+          "Year": "2023",
+          "Total greenhouse gas emissions excluding LULUCF (Mt CO2e)": ".."
+        }
+      ]
+    }
+  }
