@@ -1,0 +1,2282 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-4bca48ea17c77d0f820af527ff52ba73"},
+    "mark": {"type": "bar"},
+    "background": "white",
+    "encoding": {
+      "color": {
+        "field": "Country Name",
+        "type": "nominal",
+        "scale": {"scheme": "greens"}, 
+        "legend": {"title": "Country Name", "orient": "right"}
+      },
+      "tooltip": [
+        {"field": "Country Name", "type": "nominal"},
+        {"field": "Year", "type": "nominal"},
+        {
+          "field": "Renewable electricity output (% of total electricity output)",
+          "type": "quantitative"
+        }
+      ],
+      "x": {
+        "field": "Year",
+        "title": "Year",
+        "type": "ordinal",
+        "axis": {
+          "titleColor": "darkgreen",
+          "labelColor": "darkgreen",
+          "labelFontSize": 15,
+          "titleFontSize": 15
+        }
+      },
+      "y": {
+        "field": "Renewable electricity output (% of total electricity output)",
+        "title": "Renewable electricity output as % of total electricity in the country",
+        "type": "quantitative",
+        "axis": {
+          "titleColor": "darkgreen",
+          "labelColor": "darkgreen",
+          "labelFontSize": 15,
+          "titleFontSize": 15
+        }
+      },
+      "opacity": {
+        "condition": {"selection": "highlight", "value": 1},
+        "value": 0.2
+      }
+    },
+    "width": 750,
+    "height": 500,
+    "title": {
+      "text": "Share of Renewable Electricity in Total Output for COP-Hosting Countries between First COP and Paris Agreement",
+      "subtitle": [
+      "Source: World Bank",
+      "",
+      "You can click on the country name icon in the legend column to seperately view share of each country highlighted."
+      ],
+      "subtitleColor": "darkgreen",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 15,
+      "anchor": "middle",
+      "fontSize": 20,
+      "color": "darkgreen",
+      "offset": 10
+    },
+    "selection": {
+      "highlight": {
+        "type": "multi",
+        "fields": ["Country Name"],
+        "bind": "legend" 
+      }
+    },
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-4bca48ea17c77d0f820af527ff52ba73": [
+        {
+          "Country Name": "Argentina",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "40.2133850630456"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "9.12931236798874"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "61.0040981776948"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "5.03563850046248"
+        },
+        {
+          "Country Name": "France",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "15.3611250791428"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "4.86698923076346"
+        },
+        {
+          "Country Name": "India",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "17.2605391115517"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "16.4630952984306"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "17.466001584065"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "9.41632318714325"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "89.8313370813982"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "23.6502285744312"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "5.05292755540853"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "1.7309990513386"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "80.2960852329039"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "1.42656995665562"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "0.285358262173578"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "14.7201623227614"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "57.4299575889988"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1995",
+          "Renewable electricity output (% of total electricity output)": "2.06653453196948"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "33.3998220589501"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "9.0009949084099"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "63.1060742256021"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "3.88003433989026"
+        },
+        {
+          "Country Name": "France",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "13.4486212585435"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "4.82139711743973"
+        },
+        {
+          "Country Name": "India",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "15.7672939365417"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "15.5306833618806"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "19.3080142691251"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "9.14620922863757"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "90.5029239766082"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "24.6646923413511"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "15.6085500079758"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "2.12589115343643"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "77.9295970356647"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "1.46181849087072"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "0.69124192966275"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "23.7908459031523"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "52.2088496204512"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1996",
+          "Renewable electricity output (% of total electricity output)": "1.62748022547114"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "39.3869816592437"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "10.1686861487289"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "62.3509414225941"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "6.60950016924292"
+        },
+        {
+          "Country Name": "France",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "13.2645341583911"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "4.20830968721431"
+        },
+        {
+          "Country Name": "India",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "16.015130807865"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "10.3394213890415"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "18.7430027096753"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "9.85379465999294"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "83.4335337341349"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "19.9572519448574"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "15.3240638563967"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "2.33117205829664"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "74.4246949350866"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "1.512754106503"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "1.07723557669166"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "19.5461730823116"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "56.0169054071493"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1997",
+          "Renewable electricity output (% of total electricity output)": "1.98923191477175"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "36.3900448575907"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "10.8400933437049"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "60.4060543150615"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "9.54685865784545"
+        },
+        {
+          "Country Name": "France",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "12.7678574948843"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "4.5081692690654"
+        },
+        {
+          "Country Name": "India",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "16.7011082856411"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "15.7653963453702"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "18.3225246890461"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "9.92994480181263"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "81.9835426591598"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "17.5865587151132"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "13.7029611351018"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "2.55501289579103"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "74.9932705248991"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "1.79937629199196"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "0.89971126462154"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "19.0736948787954"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "54.8568310220853"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1998",
+          "Renewable electricity output (% of total electricity output)": "2.39532069159381"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "27.2944188300794"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "8.2856514084507"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "61.1837048424289"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "11.2512846865365"
+        },
+        {
+          "Country Name": "France",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "14.4667396980644"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "5.19722375553122"
+        },
+        {
+          "Country Name": "India",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "15.2580757461935"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "14.123261362975"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "19.7932537463115"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "9.22474326813322"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "66.3806728381124"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "20.9075244112579"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "6.39782861574254"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "2.89091328413284"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "77.0693277310924"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "1.67998800008571"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "0.460528285317979"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "13.2668082026069"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "59.3755915716512"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "1999",
+          "Renewable electricity output (% of total electricity output)": "2.63271731690623"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "33.159374648521"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "8.20364725386384"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "60.6003011908929"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "15.4550245471944"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "12.9678764686538"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "6.19853122329914"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "13.5909480276924"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "15.9560675060273"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "18.8481927532313"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "9.11604901056161"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "46.9795307039441"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "19.8040598030874"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "6.07945269377284"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "3.31581707221832"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "81.9875464497339"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "1.62878734965846"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "0.677453966329383"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "15.6137261736096"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "57.0004839392656"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2000",
+          "Renewable electricity output (% of total electricity output)": "2.66310517529215"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "41.8298840370637"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "6.85819715340011"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "58.0326562447014"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "15.4947122902807"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "14.2563718855793"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "6.51244401824412"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "13.2070435298578"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "17.474865190511"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "19.9886720560218"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "8.96543807616427"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "66.5928223305272"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "17.1056320915192"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "7.1580486508042"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "3.52540490908897"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "85.5231494850322"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "1.93639064576506"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "1.1010073352452"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "21.1535738650259"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "59.3979565988348"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2001",
+          "Renewable electricity output (% of total electricity output)": "2.49733241275421"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "43.5638757652185"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "10.8015614138281"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "59.8864192109229"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "17.2805253646244"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "11.5972761591677"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "7.64270028215289"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "12.0551611624532"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "14.9532883003595"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "17.408803309168"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "8.70870568322637"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "78.0167778016778"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "15.0558378891124"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "6.85264194289465"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "4.1404027880518"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "82.9140699631534"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "1.9417680124071"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "1.20879925330796"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "13.8306164215124"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "55.2203467501718"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2002",
+          "Renewable electricity output (% of total electricity output)": "2.89317333818692"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "37.9517548625448"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "11.5991731654609"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "58.915564963989"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "17.4901485298575"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "11.2300179517866"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "7.55297770223143"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "13.4694247561217"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "13.6385363003877"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "16.3708004107895"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "10.0221095672445"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "83.6141195346972"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "12.1257149146759"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "10.0072385088672"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "4.09221425767936"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "81.7091258070145"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "1.49991000539968"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "0.417733342558638"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "21.67904458772"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "54.7247706422018"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2003",
+          "Renewable electricity output (% of total electricity output)": "2.68494730240932"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "31.63480257575"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "12.670161883738"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "58.4463170880115"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "23.5557424077555"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "11.2429885178738"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "9.26747449292675"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "14.4825005007376"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "13.6065178133036"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "18.2133837316627"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "9.79582716934759"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "74.9860309182343"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "14.4484243401253"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "10.2061564529794"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "5.24334578220404"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "72.8880643166357"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "2.10226155358899"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "0.508031378408666"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "18.1346962971531"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "54.4132153761841"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2004",
+          "Renewable electricity output (% of total electricity output)": "3.61303216638809"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "33.5251348456266"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "13.1558237145855"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "60.0294267425595"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "27.0705733046405"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "9.86064669736174"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "10.1502111075024"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "16.6190180757235"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "13.6055328591928"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "16.318218568926"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "8.40711373205297"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "71.6623600344531"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "15.1973138518471"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "6.14307931570762"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "7.45088620009808"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "72.2695007647359"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "2.47620028450235"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "0.665138088450972"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "14.6013923197844"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "55.8583813528526"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2005",
+          "Renewable electricity output (% of total electricity output)": "4.28348161223592"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "37.127698397103"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "10.2595444729658"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "59.5442882203545"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "20.1727653416939"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "10.9475758299498"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "11.3220131113963"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "17.5404247180092"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "12.2587772033185"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "16.456444939891"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "9.44909822599951"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "70.3408728894552"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "15.3342487645557"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "5.94542891663311"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "8.1460645735736"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "73.2948314935302"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "2.66912990470503"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "1.26768480093761"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "17.6428199281418"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "51.7268572164285"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2006",
+          "Renewable electricity output (% of total electricity output)": "4.60208931703226"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "29.8422008099427"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "10.8207076486474"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "60.2962722574056"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "26.2107030216706"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "11.6909263128767"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "13.9380080579109"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "17.8640856862195"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "12.9038838981084"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "15.4807249320295"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "8.20178689867738"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "71.6005556413027"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "14.0904430169788"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "6.00090465899382"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "7.21057386012457"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "66.7100998964285"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "3.4202354482524"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "0.44299424184261"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "19.3093006536597"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "54.9060040036725"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2007",
+          "Renewable electricity output (% of total electricity output)": "5.01029338042756"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "26.3437057991513"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "10.3128032158204"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "61.472527402962"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "27.5726458378851"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "12.9792089338645"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "14.6992338976639"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "16.5098337370558"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "13.3158324739161"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "18.5511933581478"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "8.78932661054861"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "63.1306990881459"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "17.5430258247777"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "5.96789883268483"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "8.86175989288902"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "60.1325932778292"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "4.27121711589425"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "0.587823214712017"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "19.9830856202046"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "55.6790381287666"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2008",
+          "Renewable electricity output (% of total electricity output)": "5.67705220486968"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "28.9274026197721"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "12.2429510281959"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "62.8503473332841"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "27.6585218371217"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "13.1271635670849"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "16.0785536793646"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "15.6600552489802"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "13.2330616046028"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "24.0189363067266"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "9.14571650806042"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "55.2915129151291"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "12.9473322527395"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "13.993851974462"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "9.53109744834684"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "60.5909684472653"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "5.74241832703595"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "0.693636934546118"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "25.3812498072766"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "55.5442232987866"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2009",
+          "Renewable electricity output (% of total electricity output)": "6.76680846273229"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "28.5854562001549"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "18.4233030464992"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "61.396756842691"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "31.9823992589162"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "13.8573593131131"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "16.7270736678142"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "16.0437444354595"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "15.8540249182646"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "25.760359871876"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "10.5317771633873"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "69.0695158236408"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "16.6028518855907"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "17.4340993578912"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "9.38794332187474"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "57.7208135971023"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "6.93110275067"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "0.948380661450703"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "32.7755430410298"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "56.7295464179737"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2010",
+          "Renewable electricity output (% of total electricity output)": "6.81281342640788"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "32.305970437266"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "13.1861633980487"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "62.3382501312229"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "40.2537682023333"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "11.5747472478095"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "20.3832827208232"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "17.316962856526"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "11.9928905172367"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "27.5947287192996"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "11.4628446015564"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "66.8729851708575"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "14.8888030097341"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "10.78941054147"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "10.8122811789791"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "56.7600642480177"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "8.05367893181623"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "0.918420809319814"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "30.0216442049442"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "54.0929907136497"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2011",
+          "Renewable electricity output (% of total electricity output)": "9.48905310077413"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "29.2611353196635"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "7.92152427353402"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "63.230561170877"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "48.32741604508"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "14.8273540719154"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "23.0004585405584"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "15.732973360913"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "11.2368144778283"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "31.0203903154411"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "11.1942473822485"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "74.7765397330721"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "13.7881312901168"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "8.62996158770807"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "12.1144649460783"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "55.2503189972228"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "10.437756244164"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "0.602950810668738"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "29.5847480115125"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "59.4746110948048"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2012",
+          "Renewable electricity output (% of total electricity output)": "11.423960176561"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "31.4844907174391"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "6.67123404984157"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "63.2980330554908"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "45.9603373341393"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "17.045286239218"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "24.0725497476084"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "17.3493138262499"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "12.2701601703546"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "38.905348564998"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "12.2052917942741"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "69.2879675529518"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "13.2995432622778"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "14.6479584475545"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "11.9751120547299"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "53.9396864800257"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "10.405311482606"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "0.609023981800373"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "39.5835776084137"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "59.1938300349243"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2013",
+          "Renewable electricity output (% of total electricity output)": "14.988480137732"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "31.5762041956827"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "5.62924619864122"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "62.8249922157553"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "55.9004474272931"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "16.4559049430271"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "26.1300965691114"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "16.2538398153488"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "11.4751004932507"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "43.3916063800716"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "14.0593593575553"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "81.4862821343703"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "17.5435163318916"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "12.3878104779795"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "11.3210466263126"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "52.3684555832568"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "12.5186110480228"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "1.29313627636078"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "40.1052558838185"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "58.0154631822202"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2014",
+          "Renewable electricity output (% of total electricity output)": "19.2628536831965"
+        },
+        {
+          "Country Name": "Argentina",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "28.1400691239471"
+        },
+        {
+          "Country Name": "Azerbaijan",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "7.0398574206092"
+        },
+        {
+          "Country Name": "Canada",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "63.011450040254"
+        },
+        {
+          "Country Name": "Denmark",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "65.5059246208588"
+        },
+        {
+          "Country Name": "France",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "15.8576666299907"
+        },
+        {
+          "Country Name": "Germany",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "29.2317701223308"
+        },
+        {
+          "Country Name": "India",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "15.3430503454798"
+        },
+        {
+          "Country Name": "Indonesia",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "10.6511556345733"
+        },
+        {
+          "Country Name": "Italy",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "38.6792251795342"
+        },
+        {
+          "Country Name": "Japan",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "15.9847807230219"
+        },
+        {
+          "Country Name": "Kenya",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "87.5142472282665"
+        },
+        {
+          "Country Name": "Mexico",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "15.3941337927222"
+        },
+        {
+          "Country Name": "Morocco",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "14.3088903309539"
+        },
+        {
+          "Country Name": "Netherlands",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "12.4420823112565"
+        },
+        {
+          "Country Name": "Peru",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "52.7305133572361"
+        },
+        {
+          "Country Name": "Poland",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "13.8023986710559"
+        },
+        {
+          "Country Name": "Qatar",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "0"
+        },
+        {
+          "Country Name": "South Africa",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "2.25504182608132"
+        },
+        {
+          "Country Name": "Spain",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "34.949890565603"
+        },
+        {
+          "Country Name": "Switzerland",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "62.1979817540887"
+        },
+        {
+          "Country Name": "United Kingdom",
+          "Year": "2015",
+          "Renewable electricity output (% of total electricity output)": "24.8400504227664"
+        }
+      ]
+    }
+  }
