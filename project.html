@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project - PP434</title>
-    <!-- Include Vega libraries for data visualizations -->
+
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -110,9 +110,21 @@
             border: 1px solid #ddd;
             padding: 15px;
             border-radius: 8px;
-            text-align: justify; /* Align text evenly on both sides */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+            text-align: justify;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 10px;
+            }
+         }
 
     </style>
 </head>
