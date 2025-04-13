@@ -2,157 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
-
-  <!-- Link to an external CSS file if you have one -->
-  <!-- <link rel="stylesheet" href="index.css"> -->
-
-  <!-- Google Fonts for improved typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Vega libraries for charts -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-  <!-- Internal CSS for quick styling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Page</title>
   <style>
-    /* Global Styles */
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      padding: 0;
+      text-align: center;
+      background-color: #f4f4f4;
     }
-    
-    /* Header */
     header {
-      background: #004466;
+      background-color: #333;
       color: #fff;
       padding: 20px;
-      text-align: center;
     }
-    header h1 {
+    h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.5em;
     }
-    header p {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-    header a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-    header a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Main Content */
-    main {
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
       max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 20px;
+      gap: 20px;
     }
-    section {
-      background: #fff;
-      margin-bottom: 20px;
+    .box {
+      background-color: #fff;
+      border: 1px solid #ccc;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
     }
-    .chart-description h2 {
-      margin-top: 0;
-      color: #004466;
+    .box:hover {
+      transform: scale(1.05);
     }
-    .chart-description p {
-      font-size: 0.95rem;
-      color: #555;
+    .box a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.2em;
+      display: block;
     }
-    figure {
-      margin: 20px auto;
-      max-width: 100%;
-    }
-    
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #004466;
-      color: #fff;
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .box {
+        width: 80%;
+        margin: 10px auto;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>My Portfolio</h1>
-    <p>
-      Your Name | <a href="https://github.com/yourusername">GitHub</a> | 
-      <a href="https://yourprojectsite.com">Project</a>
-    </p>
-    <h3>A brief introduction or tagline goes here. You can mention your skills, current role, or areas of interest.</h3>
+    <h1>Your Name Here</h1>
   </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Section Example: Chart One -->
-    <section>
-      <div class="chart-description">
-        <h2>Chart Title 1</h2>
-        <p>
-          A short description of what this chart represents. Explain the context, the data used, and any key insights you want to highlight.
-        </p>
-      </div>
-      <figure id="chart1"></figure>
-    </section>
-
-    <!-- Section Example: Chart Two -->
-    <section>
-      <div class="chart-description">
-        <h2>Chart Title 2</h2>
-        <p>
-          Another description goes here for the second chart. You can explain trends, comparisons, or any other observations.
-        </p>
-      </div>
-      <figure id="chart2"></figure>
-    </section>
-
-    <!-- Additional sections can be added in a similar way -->
-    
-    <!-- Section Example: Interactive Visualisation -->
-    <section>
-      <div class="chart-description">
-        <h2>Interactive Visualisation</h2>
-        <p>
-          Describe the interactive element of your portfolio here. This could be an interactive map, a dynamic chart, or another interactive widget.
-        </p>
-      </div>
-      <figure id="interactiveChart"></figure>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Vega Embed Scripts -->
-  <script>
-    // Define the URLs or specifications for your charts.
-    // Replace these sample URLs with the actual paths or JSON specs for your charts.
-    const chart1Spec = "https://vega.github.io/vega-lite/examples/specs/bar.json";  // Sample chart spec URL
-    const chart2Spec = "https://vega.github.io/vega-lite/examples/specs/line.json"; // Sample chart spec URL
-    const interactiveChartSpec = "https://vega.github.io/vega-lite/examples/specs/area.json"; // Sample chart spec URL
-
-    // Embed charts into the specified figure elements.
-    vegaEmbed('#chart1', chart1Spec);
-    vegaEmbed('#chart2', chart2Spec);
-    vegaEmbed('#interactiveChart', interactiveChartSpec);
-  </script>
+  <div class="container">
+    <div class="box">
+      <a href="page1.html">Section 1</a>
+    </div>
+    <div class="box">
+      <a href="page2.html">Section 2</a>
+    </div>
+    <div class="box">
+      <a href="page3.html">Section 3</a>
+    </div>
+  </div>
 </body>
 </html>
