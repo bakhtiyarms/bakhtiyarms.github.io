@@ -15,14 +15,15 @@
       font-family: Arial, sans-serif;
       overflow: hidden;
       position: relative;
-      background-color: #111;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
       height: 100vh;
     }
     /* Floating background elements */
     .floating {
       position: absolute;
       font-size: 1rem;
+      color: #000080; /* Navy blue */
       opacity: 0.6;
       animation: floatAnimation 15s linear infinite;
       white-space: nowrap;
@@ -52,7 +53,13 @@
     }
     header h1 {
       font-size: 3em;
+      margin-bottom: 20px;
+    }
+    /* Placeholder text styling */
+    .intro-text {
+      font-size: 1.2em;
       margin-bottom: 40px;
+      max-width: 600px;
     }
     /* Box container styling */
     .box-container {
@@ -63,19 +70,19 @@
       width: 100%;
     }
     .box {
-      background-color: #222;
-      border: 1px solid #444;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
       padding: 30px;
       width: 250px;
       transition: transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .box:hover {
       transform: scale(1.05);
     }
     .box a {
       text-decoration: none;
-      color: #fff;
+      color: #000;
       font-size: 1.2em;
       display: block;
     }
@@ -83,20 +90,34 @@
 </head>
 <body>
   <!-- Dynamic Floating Background Elements -->
-  <div class="floating" style="top: 10%; left: 5%; font-size: 1.2rem;">Data Analysis</div>
-  <div class="floating" style="top: 20%; right: 10%; font-size: 0.9rem;">12345</div>
-  <div class="floating" style="top: 40%; left: 15%; font-size: 1rem;">Data Visualization</div>
-  <div class="floating" style="top: 70%; right: 15%; font-size: 1.1rem;">Research</div>
-  <div class="floating" style="top: 80%; left: 20%; font-size: 0.8rem;">Analytics</div>
-  <div class="floating" style="top: 30%; right: 5%; font-size: 1rem;">Economics</div>
-  <div class="floating" style="top: 50%; left: 50%; font-size: 1.2rem;">98765</div>
-  <div class="floating" style="top: 65%; left: 60%; font-size: 0.9rem;">Data Science</div>
+  <div class="floating" style="top: 5%; left: 5%;">Data Analysis</div>
+  <div class="floating" style="top: 10%; right: 10%;">12345</div>
+  <div class="floating" style="top: 20%; left: 15%;">Data Visualization</div>
+  <div class="floating" style="top: 30%; right: 15%;">Research</div>
+  <div class="floating" style="top: 40%; left: 20%;">Analytics</div>
+  <div class="floating" style="top: 50%; right: 5%;">Economics</div>
+  <div class="floating" style="top: 55%; left: 50%;">98765</div>
+  <div class="floating" style="top: 60%; left: 60%;">Data Science</div>
+  <!-- Additional Floating Symbols and Letters -->
+  <div class="floating" style="top: 15%; left: 30%;">α</div>
+  <div class="floating" style="top: 25%; right: 25%;">β</div>
+  <div class="floating" style="top: 35%; left: 40%;">γ</div>
+  <div class="floating" style="top: 45%; right: 35%;">δ</div>
+  <div class="floating" style="top: 65%; left: 20%;">π</div>
+  <div class="floating" style="top: 75%; right: 20%;">σ</div>
+  <div class="floating" style="top: 80%; left: 40%;">∑</div>
+  <div class="floating" style="top: 10%; right: 5%;">∫</div>
+  <div class="floating" style="top: 50%; left: 80%;">√</div>
 
   <!-- Main Content -->
   <div class="content">
     <header>
       <h1>Your Name Here</h1>
     </header>
+    <!-- Placeholder for additional text -->
+    <p class="intro-text">
+      Welcome to my GitHub page! Here you'll find insights on data science, visualizations, research, and much more. Explore the sections below to learn more.
+    </p>
     <div class="box-container">
       <div class="box">
         <a href="page1.html">Section 1</a>
