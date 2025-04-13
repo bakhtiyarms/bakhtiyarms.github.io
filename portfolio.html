@@ -1,0 +1,345 @@
+<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
+<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
+<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
+<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
+
+<!-- Take a look around and make your own copy to adapt for your own use. -->
+
+<!-- This is a comment -->
+<!-- Comments are not displayed in the browser -->
+<!-- They can be used to leave notes in the code -->
+
+<!DOCTYPE html>
+<html> 
+    <!-- HTML is heirarchial: tags like this define elements on the page. 
+    Each tag does something different. For example:
+        - The <html> tag defines the whole document.
+        - The <h1> tag defines a large heading
+        - The <p> tag defines a paragraph
+        - Tags appear as an opening <div> and closing </div> pair
+    -->
+
+<head>    
+    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
+
+    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
+    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+
+    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body> 
+<!-- The body tag contains the elements that visitors to our page will see. -->
+    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Bakhtiyar Salmanov
+    </h1>
+    <p style="margin-top: 0px; color: darkblue">
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        Bakhtiyar M Salmanov, MPA Candidate at LSE | <a
+            href="https://github.com/bakhtiyarms/bakhtiyarms.github.io">GitHub</a> | <a 
+            href="https://bakhtiyarms.github.io/project">Project</a>
+    </p>
+    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        I am Bakhtiyar Salmanov, a final year Master of Public Administration student at the London School of Economics and Political Science (LSE).
+    </h3>
+
+    <h3 class="small">
+        Welcome to my online portfolio where I showcase dynamic visualisations and analytical research projects designed to support data-driven decision-making in public policy. Explore how automation and visualisation tools can enhance policy analysis and communication.  
+    </h3>
+
+    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+    <section>
+        <div class="chart-description">
+            <h2>GDP per capita (PPP) and life expectancy</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The chart shows a relationship between GDP per capita (PPP) and life expectancy for different countries across various regions.
+                The X-axis represents the GDP per capita in purchasing power parity (PPP), meaning it adjusts for price level differences across countries.
+                The scale is logarithmic, so it increases more rapidly as you move to the right. The Y-axis represents the life expectancy at birth in years.
+                The chart shows a positive correlation between GDP and life expectancy, indicating that as GDP per capita increases, life expectancy tends to rise.
+                Countries with lower GDP tend to have shorter life expectancies, while those with higher GDPs tend to have longer life expectancies.
+            </p>
+        </div>
+        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Cumulative percentage change in population</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This chart shows the projected cumulative percentage change in population for South Korea, Japan, the UK, Italy, Spain, France, and the US from 2020 to 2100, according to UN data.
+                It highlights population decline trends, with countries like South Korea and Japan expected to experience the most significant population decreases, while countries like the US are projected to have moderate population growth.
+                South Korea is projected to have a sharp population decline, reaching around -0.45 by 2100. Japan also shows a significant decline, though less steep than South Korea. The UK, Italy, and Spain show steady declines, with Italy declining slightly more.
+                France remains relatively stable, showing a minimal decline. The US is projected to have population growth, with an increase of about 0.3 by the end of the century.
+                This chart underscores how certain countries are facing severe demographic challenges related to aging populations and declining birth rates, while others are projected to grow.
+            </p>
+        </div>
+        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Sugar intensity and two variables</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This chart shows the relationship between the sugar intensity (grams of sugar per 100 grams of product) and two variables.
+                Firstly, number of products (represented by pink bars on the left y-axis). This indicates how many products fall within specific ranges of sugar intensity.
+                Most products have a sugar intensity between 4 and 10 grams per 100 grams, with a peak around 5 grams. Secondly, tax rate (depicted by the green line on the right y-axis).
+                This shows the tax (in pence per gram of sugar) associated with each sugar intensity level. As sugar intensity increases, the tax per gram of sugar decreases.
+                The chart suggests that products with higher sugar intensity have a lower tax per gram of sugar, while a greater number of products fall within the mid-range of sugar intensity.
+            </p>
+        </div>
+        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Gun deaths and income across US states</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This chart shows the relationship between gun deaths and income across US states, with several variables encoded visually.
+                The X-axis represents the median income of US states while the Y-axis shows firearm deaths per 100,000 population.
+                The colours indicate the Gini coefficient (a measure of income inequality), with a scale from 0.42 (low inequality) to 0.48 (high inequality).
+                The chart highlights how income, gun deaths, inequality, region, and prison rates vary across US states. For instance, states with higher median incomes appear to have lower gun death rates, while some states with high Gini coefficients tend to have higher gun deaths.
+                The regional distinctions (Midwest, Northeast, South, West) may show trends based on geography.
+            </p>
+        </div>
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Growth of renewable energy output in Germany</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The chart depicts the growth of renewable energy output in Germany from the 1970s to 2020. The data is presented in gigawatt-hours (GWh), with the source noted as "IEA via ECO-API."
+                The green bars show a relatively flat output until the mid-1990s, followed by a significant increase in renewable energy production, peaking around 2020.
+                This chart highlights Germany's growing focus on renewable energy over the past few decades, with a sharp rise in output, particularly from the early 2000s onwards, reflecting the country's commitment to cleaner energy sources.
+            </p>
+        </div>
+        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>spending on alcohol, tobacco, and narcotics over time in the UK</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This chart displays "Vice Spending," showing the trends in spending on alcohol, tobacco, and narcotics over time in the UK, using data from the Office for National Statistics (ONS).
+                The categories tracked include beer, narcotics, spirits, tobacco, and wines, cider and perry. The graph reveals patterns in how people have allocated their spending on these items over the years.
+            </p>
+        </div>
+        <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Highlights from the Festival of Economics at LSE - Trading nation: How can we get Britain exporting again?
+            </h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Though UK exports have been on a constant increase since the 1960s, it was negatively affected by the pandemic in 2020 and in the aftermath period.
+            </p>
+        </div>
+        <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    </section>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                For the last decades, the UK has spent yearly less than 1% of its GDP on R&D, below the investment levels of other advanced economies.
+            </p>
+        </div>
+        <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Replicating, Recreating, and improving someone else's chart</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This bar chart published by the New York Times (November 22, 2018) shows that in 1980, the majority of first-time mothers were between the ages of 20 and 24, with the distribution peaking around age 20 and gradually decreasing for older ages.
+            </p>
+        </div>
+        <img src="mothersage.png" alt="The New York Times Statistics" style="width: 350px;">
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Below I replicated the bar chart by constructing the data manually.
+        </p>
+        <figure id="Location9"></figure>
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            I changed the colour of the bar chart to make it seem more consistent and easy to read for readers.
+        </p>
+        <figure id="Location10"></figure>
+    </section>
+
+    </section>
+            <h2>Scraping data for chart construction</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                https://colab.research.google.com/drive/1LhrbHKbGKBrA4Lcl-fo2xr4dyMgRD4q_?usp=sharing#scrollTo=XHQ-H02eR9co
+             </p>
+
+             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                I chose this website because it is publicly available to get data and I am also a big aviation fan.
+             </p>
+        </div>
+        <figure id="Location11"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Building a dashboard</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                The data is retrieved from ONS based on the 9 labour market statistics time series:
+                https://colab.research.google.com/drive/1foLa0onO4HfPYvsmduxa4G4zC_TlmMXk?usp=sharing
+            </p>
+        </div>
+        <figure id="Location12"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location13"></figure>
+        <figure id="Location14"></figure>
+        <figure id="Location15"></figure>
+        <figure id="Location16"></figure>
+        <figure id="Location17"></figure>
+        <figure id="Location18"></figure>
+        <figure id="Location19"></figure>
+        <figure id="Location20"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Building interactive maps and their choropleths</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This map shows the federative units of Brazil that are subnational entities with a certain degree of autonomy and endowed with their own government and constitution, which together form the Federative Republic of Brazil.
+            </p>
+        </div>
+        <p> Base Map </p>
+        <figure id="Location21"></figure>
+        <p> Choropleth Map</p>
+        <figure id="Location22"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Working with Big Data. Extracting a story from millions of prices </h2>
+            
+            <p> This chart shows the price evolution of four bread types in Britain over a year using data from Davies and McElvoy (2024).
+                I filtered for bread products, grouped data by month to calculate average indices, and plotted the results,
+                differentiating each bread type with distinct colors for clarity. </p>
+            <p> <a href="https://colab.research.google.com/drive/1RaKb3tf7lhjzJqN-nRRU_RE5yEq-4oSW?usp=sharing">Colab data source</a> </p>
+                <figure id="Location23"></figure>
+            
+            <p> This bar chart displays the starting prices of four bread types.
+                I filtered the dataset by cpi_name to identify the products and
+                extracted their earliest price observations and displayed the prices with horizontal bars. </p>
+            <p> <a href="https://colab.research.google.com/drive/1ToCyX_0W9GB2HP82SG496PgC3WaaIz65?usp=sharing">Colab data source</a> </p>
+            <figure id="Location24"></figure>
+        </div>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Analytics charts</h2>
+            
+            <p> </p>
+            <figure id="Location25"></figure>
+            
+            <p> </p>
+            <figure id="Location26"></figure>
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Interactive Visualisations</h2>
+            
+            <p> </p>
+            <figure id="Location27"></figure>
+            
+            <p> </p>
+            <figure id="Location28"></figure>
+        </div>
+    </section>
+
+    <!-- Do you want to add more sections? -->
+        <!-- Try copying pasting the section above -->
+        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
+        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+
+
+    <!-- This is a script, it's a way to run JavaScript code on the page -->
+    <script>
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
+        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+        let figure_2_spec = "wk1_declining_pop.json"
+        let figure_3_spec = "Week1_chart3.json"
+        let figure_4_spec = "learning_trial_with_Zeytuna.json"
+        let figure_5_spec = "first_made_chart.json"
+        let figure_6_spec = "ONS_Stats.json"
+        let figure_7_spec = "British_exports.json"
+        let figure_8_spec = "British_R&D.json"
+        let figure_9_spec = "mothersage.json"
+        let figure_10_spec = "mothersage_fixed.json"
+        let figure_11_spec = "Airlines.json"
+        let figure_12_spec = "AIWH_chart.json"
+        let figure_13_spec = "J64K_chart.json"
+        let figure_14_spec = "YCDZ_chart.json"
+        let figure_15_spec = "YCHL_chart.json"
+        let figure_16_spec = "YCRE_chart.json"
+        let figure_17_spec = "J5RW_chart.json"
+        let figure_18_spec = "JP9T_chart.json"
+        let figure_19_spec = "YCEP_chart.json"
+        let figure_20_spec = "JPA2_chart.json"
+        let figure_21_spec = "Brazil_base_map.json"
+        let figure_22_spec = "Brazil_advanced_map.json"
+        let figure_23_spec = "bread_prices_1.json"
+        let figure_24_spec = "bread_prices_2.json"
+        let figure_25_spec = "week_9_data_1.json"
+        let figure_26_spec = "week_9_data_2.json"
+        let figure_27_spec = "week_10_chart_1.json"
+        let figure_28_spec = "week_10_chart_2.json"
+                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+        // Do you want to add more graphs?
+        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
+        // e.g. 
+        // let figure_3_spec = ...
+        // vegaEmbed('#Location3', figure_3_spec)
+
+        vegaEmbed('#Location2', figure_2_spec)
+        vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
+        vegaEmbed('#Location5', figure_5_spec)
+        vegaEmbed('#Location6', figure_6_spec)
+        vegaEmbed('#Location7', figure_7_spec)
+        vegaEmbed('#Location8', figure_8_spec)
+        vegaEmbed('#Location9', figure_9_spec)
+        vegaEmbed('#Location10', figure_10_spec)
+        vegaEmbed('#Location11', figure_11_spec)
+        vegaEmbed('#Location12', figure_12_spec)
+        vegaEmbed('#Location13', figure_13_spec)
+        vegaEmbed('#Location14', figure_14_spec)
+        vegaEmbed('#Location15', figure_15_spec)
+        vegaEmbed('#Location16', figure_16_spec)
+        vegaEmbed('#Location17', figure_17_spec)
+        vegaEmbed('#Location18', figure_18_spec)
+        vegaEmbed('#Location19', figure_19_spec)
+        vegaEmbed('#Location20', figure_20_spec)
+        vegaEmbed('#Location21', figure_21_spec)
+        vegaEmbed('#Location22', figure_22_spec)
+        vegaEmbed('#Location23', figure_23_spec)
+        vegaEmbed('#Location24', figure_24_spec)
+        vegaEmbed('#Location25', figure_25_spec)
+        vegaEmbed('#Location26', figure_26_spec)
+        vegaEmbed('#Location27', figure_27_spec)
+        vegaEmbed('#Location28', figure_28_spec)
+
+    </script>
+
+</body>
+    
+</html>
