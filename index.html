@@ -13,11 +13,10 @@
     }
     body {
       font-family: Arial, sans-serif;
-      overflow: hidden;
-      position: relative;
+      overflow-x: hidden;
       background-color: #fff;
-      color: #000;
-      height: 100vh;
+      color: #333;
+      line-height: 1.6;
     }
     /* Floating background elements */
     .floating {
@@ -39,23 +38,24 @@
         transform: translateY(0) translateX(0);
       }
     }
-    /* Container for the main content */
-    .content {
+    /* Hero Section */
+    .hero {
       position: relative;
       z-index: 2;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #6dd5ed, #2193b0);
+      color: #fff;
       text-align: center;
-      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    header h1 {
+    .hero h1 {
       font-size: 3em;
       margin-bottom: 20px;
     }
-    /* Placeholder text styling */
     .intro-text {
       font-size: 1.2em;
       margin-bottom: 40px;
@@ -68,6 +68,7 @@
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
+      margin-bottom: 40px;
     }
     .box {
       background-color: #f0f0f0;
@@ -82,41 +83,91 @@
     }
     .box a {
       text-decoration: none;
-      color: #000;
+      color: #333;
       font-size: 1.2em;
       display: block;
+    }
+    /* Sections styling */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    /* About Me Section */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about-container img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .about-container p {
+      flex: 1;
+      font-size: 1.1em;
+      max-width: 600px;
+      text-align: left;
+    }
+    /* Contact Section */
+    .contact-info a {
+      color: #000080;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <!-- Dynamic Floating Background Elements -->
-  <div class="floating" style="top: 5%; left: 5%;">Data Analysis</div>
-  <div class="floating" style="top: 10%; right: 10%;">12345</div>
-  <div class="floating" style="top: 20%; left: 15%;">Data Visualization</div>
-  <div class="floating" style="top: 30%; right: 15%;">Research</div>
-  <div class="floating" style="top: 40%; left: 20%;">Analytics</div>
-  <div class="floating" style="top: 50%; right: 5%;">Economics</div>
-  <div class="floating" style="top: 55%; left: 50%;">98765</div>
-  <div class="floating" style="top: 60%; left: 60%;">Data Science</div>
-  <!-- Additional Floating Symbols and Letters -->
-  <div class="floating" style="top: 15%; left: 30%;">α</div>
-  <div class="floating" style="top: 25%; right: 25%;">β</div>
-  <div class="floating" style="top: 35%; left: 40%;">γ</div>
-  <div class="floating" style="top: 45%; right: 35%;">δ</div>
-  <div class="floating" style="top: 65%; left: 20%;">π</div>
-  <div class="floating" style="top: 75%; right: 20%;">σ</div>
-  <div class="floating" style="top: 80%; left: 40%;">∑</div>
-  <div class="floating" style="top: 10%; right: 5%;">∫</div>
-  <div class="floating" style="top: 50%; left: 80%;">√</div>
-
-  <!-- Main Content -->
-  <div class="content">
+  <!-- Tripled amount of floating items -->
+  <div class="floating" style="top: 2%; left: 5%;">Data Analysis</div>
+  <div class="floating" style="top: 5%; right: 10%;">12345</div>
+  <div class="floating" style="top: 8%; left: 15%;">Data Visualisation</div>
+  <div class="floating" style="top: 12%; right: 15%;">Research</div>
+  <div class="floating" style="top: 15%; left: 20%;">Analytics</div>
+  <div class="floating" style="top: 18%; right: 5%;">Economics</div>
+  <div class="floating" style="top: 22%; left: 50%;">98765</div>
+  <div class="floating" style="top: 25%; left: 60%;">Data Science</div>
+  <div class="floating" style="top: 28%; right: 20%;">42</div>
+  <div class="floating" style="top: 30%; left: 30%;">∑</div>
+  <div class="floating" style="top: 32%; right: 25%;">∫</div>
+  <div class="floating" style="top: 35%; left: 40%;">√</div>
+  <div class="floating" style="top: 38%; right: 30%;">α</div>
+  <div class="floating" style="top: 40%; left: 10%;">β</div>
+  <div class="floating" style="top: 42%; right: 10%;">γ</div>
+  <div class="floating" style="top: 45%; left: 25%;">δ</div>
+  <div class="floating" style="top: 48%; right: 5%;">π</div>
+  <div class="floating" style="top: 50%; left: 55%;">σ</div>
+  <div class="floating" style="top: 52%; right: 20%;">Ω</div>
+  <div class="floating" style="top: 55%; left: 35%;">∂</div>
+  <div class="floating" style="top: 58%; right: 15%;">λ</div>
+  <div class="floating" style="top: 60%; left: 45%;">µ</div>
+  <div class="floating" style="top: 62%; right: 30%;">ν</div>
+  <div class="floating" style="top: 65%; left: 15%;">ξ</div>
+  <div class="floating" style="top: 68%; right: 5%;">τ</div>
+  <div class="floating" style="top: 70%; left: 20%;">ϕ</div>
+  <div class="floating" style="top: 73%; right: 10%;">χ</div>
+  <div class="floating" style="top: 75%; left: 30%;">ψ</div>
+  <div class="floating" style="top: 78%; right: 25%;">ω</div>
+  <div class="floating" style="top: 80%; left: 40%;">∇</div>
+  <div class="floating" style="top: 82%; right: 20%;">∞</div>
+  
+  <!-- Hero Section -->
+  <div class="hero" id="home">
     <header>
       <h1>Your Name Here</h1>
     </header>
-    <!-- Placeholder for additional text -->
     <p class="intro-text">
-      Welcome to my GitHub page! Here you'll find insights on data science, visualizations, research, and much more. Explore the sections below to learn more.
+      Welcome to my GitHub page! Discover my projects and insights on data science, visualizations, research, and more.
     </p>
     <div class="box-container">
       <div class="box">
@@ -130,5 +181,25 @@
       </div>
     </div>
   </div>
+  
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="yourphoto.jpg" alt="Your Photo" />
+      <p>
+        Hi, I'm [Your Name]. I'm passionate about data science, analytics, and research. I love exploring data to uncover insights and creating visually engaging presentations of complex information. Replace this text with your own bio and background.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Contact Me Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Alternate: <a href="mailto:anotheremail@example.com">anotheremail@example.com</a></p>
+    </div>
+  </section>
 </body>
 </html>
