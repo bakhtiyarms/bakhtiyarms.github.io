@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My GitHub Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset and basic styling */
+    * {
       margin: 0;
       padding: 0;
-      text-align: center;
-      background-color: #f4f4f4;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #333;
+    body {
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+      background-color: #111;
       color: #fff;
+      height: 100vh;
+    }
+    /* Floating background elements */
+    .floating {
+      position: absolute;
+      font-size: 1rem;
+      opacity: 0.6;
+      animation: floatAnimation 15s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+      50% {
+        transform: translateY(-20px) translateX(20px);
+      }
+      100% {
+        transform: translateY(0) translateX(0);
+      }
+    }
+    /* Container for the main content */
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
       padding: 20px;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
     }
-    .container {
+    /* Box container styling */
+    .box-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 40px auto;
-      max-width: 1000px;
       gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
     }
     .box {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 20px;
-      width: 30%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease-in-out;
+      background-color: #222;
+      border: 1px solid #444;
+      padding: 30px;
+      width: 250px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
     .box:hover {
       transform: scale(1.05);
     }
     .box a {
       text-decoration: none;
-      color: inherit;
+      color: #fff;
       font-size: 1.2em;
       display: block;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .box {
-        width: 80%;
-        margin: 10px auto;
-      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name Here</h1>
-  </header>
-  <div class="container">
-    <div class="box">
-      <a href="page1.html">Section 1</a>
-    </div>
-    <div class="box">
-      <a href="page2.html">Section 2</a>
-    </div>
-    <div class="box">
-      <a href="page3.html">Section 3</a>
+  <!-- Dynamic Floating Background Elements -->
+  <div class="floating" style="top: 10%; left: 5%; font-size: 1.2rem;">Data Analysis</div>
+  <div class="floating" style="top: 20%; right: 10%; font-size: 0.9rem;">12345</div>
+  <div class="floating" style="top: 40%; left: 15%; font-size: 1rem;">Data Visualization</div>
+  <div class="floating" style="top: 70%; right: 15%; font-size: 1.1rem;">Research</div>
+  <div class="floating" style="top: 80%; left: 20%; font-size: 0.8rem;">Analytics</div>
+  <div class="floating" style="top: 30%; right: 5%; font-size: 1rem;">Economics</div>
+  <div class="floating" style="top: 50%; left: 50%; font-size: 1.2rem;">98765</div>
+  <div class="floating" style="top: 65%; left: 60%; font-size: 0.9rem;">Data Science</div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <h1>Your Name Here</h1>
+    </header>
+    <div class="box-container">
+      <div class="box">
+        <a href="page1.html">Section 1</a>
+      </div>
+      <div class="box">
+        <a href="page2.html">Section 2</a>
+      </div>
+      <div class="box">
+        <a href="page3.html">Section 3</a>
+      </div>
     </div>
   </div>
 </body>
